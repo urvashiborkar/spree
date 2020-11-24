@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spree</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="css/style.css">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style media="screen">
+	article .row .col-lg-3 img{
+		height: 193px !important;
+		/* margin-left: -21px; */
+		/* background: lightgray; */
+
+	}
+</style>
+
+</head>
+<body>
+	<!-- .navbar -->
+<section class="navigation">
+  <div class="nav-container">
+    <div class="brand">
+      <a href="#!" style="    text-transform: capitalize;">Spree</a>
+    </div>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <a href="#!">fashion</a>
+        </li>
+        <li>
+          <a href="#!">Health & beauty</a>
+        </li>
+        <li>
+          <a href="#!">Electronics</a>
+          <!-- <ul class="nav-dropdown">
+            <li>
+              <a href="#!">Web Design</a>
+            </li>
+            <li>
+              <a href="#!">Web Development</a>
+            </li>
+            <li>
+              <a href="#!">Graphic Design</a>
+            </li>
+          </ul> -->
+        </li>
+        <li>
+          <a href="#!">Groceries</a>
+        </li>
+				<li>
+					<a href="#" style="    text-transform: capitalize;">
+						<div class="">
+							<div class="form-group has-search">
+						    <input type="text" class="form-control" placeholder="Search">
+								<span class="fa fa-search form-control-feedback"></span>
+
+						  </div>
+						</div>
+					</a>
+				</li>
+
+<li class="border_ccc">
+  <a href="" style="    text-transform: capitalize;">
+	Account <span> <i class="fa fa-user"></i>
+</a>
+</li>
+<li>
+  <a href="" style="    text-transform: capitalize;">
+	Cart <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+</a>
+</li>
+      </ul>
+    </nav>
+
+  </div>
+</section>
+<div>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="data:image/jpeg;base64,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"
+			alt="Los Angeles" width="100%" height="300">
+      <div class="carousel-caption">
+        <h3>Los Angeles</h3>
+        <p>We had such a great time in LA!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0TzEe9zpVO4Xr3PoMykXg0p9NTxy6Hgc2Dg&usqp=CAU" alt="Chicago" width="100%" height="300">
+      <div class="carousel-caption">
+        <h3>Chicago</h3>
+        <p>Thank you, Chicago!</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+	<!-- <div class="col-sm-12 p-0">
+ 		<img src="https://img.lovepik.com//back_pic/05/70/26/915b9dfcd2e30f6.jpg_wh860.jpg" style="width: 100%; height: 300px;">
+ 	</div> -->
+</div>
+<article>
+ 	<div  class="mt-2 mb-2">
+ 		<div class="">
+ 			<div class="d-flex space-between fs-15 mt-3" style="    margin-top: 44px !important;">
+ 			<div>
+ 				<h4 class="fs-15"> <b>Fashion</b> </h4>
+ 			</div>
+ 			<div>
+ 				<a href="" style="color: black; font-weight: 600;">Shop All  <i class="fa fa-chevron-right"></i> </a>
+ 			</div>
+ 		</div>
+ 		</div>
+		<div class="row" style="    margin-left: -2px;">
+ 			<div class="col-lg-3 w20">
+ 				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEXt7e3V1dXW1tbm5ubs7Ozg4ODc3NzS0tLw8PDo6OjZ2dnj4+Pe3t5T9WAhAAAEmklEQVR4nO2ciXKsIBBFsQUB9f+/9+EuKjPEpe2X3FOVSTJlAmdaWRpUKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8Pbnh9mr4Uza+nnSpbChTTy0M/hNfKeNeXyIshW/BReaVZ4+h8zSY3lESG008rz+a30LIqFpbYDa1huxC1qovQDHAbUuG5DF3Tl8cmORdTs/Ua9VxuzUHXaA+WnsnQD90EUa1ZPlRtChoMuRobs5w0PLiGphJ5YlgNxVnGHrgeTlOuIkdD4imtx/B+qKNhzThOLF8xJE5D+4ohT2k9MLwZGD4ADG8Ghg8Aw5uB4QPINRxqdH14J9awmyG7summ5tfqJthQO1NY21wtUrKh7zJW9mqWTLLhcPDV9INYQ6XHqhXGXaqcXEM1L2/4S2k5qYbaNfP61LXEnFRDpWhJize/MIbrEAau1E6qoV75FfZKwlqmoVYmWiWmUp1ex5VpqKIQdhdkOG9/l2EcwuDYnu4UZRrq7frihSVOgYahKm2xUzw9eBNoqJy3O8Pi9CRDoqGqhv0+UQzpbKco0bAs9iEMVOeKlGeoVWpH0bnBmzxD5VMbbuhUJQUapkJI9tR5Ks+w+bBnqnRxXqr7razMx30d8gzTu4nI1nE1O8HWfkl0SDN0TXq7lKUwyYgqqrvDw9uftq1JM9RftoP57eF09PYaYYbOpNRG6vUIXLtqrH6bPk+FGX4LYdcpLripVSJbupSjMMNvISyiwZsu5sFdOlsly1Afa8Xn6Xzw9N96geTAXJShazMMi3I4WOsmejtlIMowbws4jRmbOOA2tV1dkGFoGbMMu9O0q24VZzpSSziCDKfttV8iSGOSv9wODRKjVkGGrs7Z/G0b1w/XdDy6Cz/b8rBIQYal3U7sj6j70WhoR+12AEt02CVKMdTpWVNk0TeZ4as5SgM0R8NTIYZDnTMYL7bjjpOO8uJCDFVeCKebX1Kt7tEcQ4xhXgjH/dPJgw96DCmGuyz3MdQ1pc4nj632QRRi+HXWNNJNghvz4cPwO0Uhht9nTeMfhqp+PGCf0BBimBnC8a8/fRzNdpFKhmFuCDOoZcYwa9aUyXZFXIThrTfO0qbHeN1QL+/exKbHeN1QZc6a8tnMMV431GHWdPM9s3W07/Z1Q+XKgxXfS8RZqfcN84bcP4LW6zfvG2YOuX9EGwavk9HrhvqBEEYbNt82/LTWdIFVVuptwweuwp6l23/bUD/zHJfVbsa3Df3nmcJpltP0bcPwziNR9GJaGqUbU91LG1g9BeN9w2v3GiSR0x8+9AAQSWOap4Hhzfx6Q1eNzxdiKU1F6yFshn0ILdPjcPoUCU2GLGVOeVG2p4u5aZWK68Lw/Vkavswdt/jmFDiN7A9WNB5hSf3WhoPpFKXrd9tmCi63irA8sI3mb+f2F58xvDF/n6VIwytXCFW/2Y7zyZ6TJVv3pPpnxPGzW655Ere9a+tpqLAVp2D/BNOa1TG54+1JfMXW4JDhDeCM9r5kwL+k92d4/vNFBAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Y/wDpoY2HBKwqLIAAAAASUVORK5CYII=" style="width: 100%; height: 175px;">
+ 				<span class="font-weight500">Apply iPad (Latest Model) Wifi-Fi</span>
+ 				<h4>$300</h4>
+ 				<button class="add_card">Add to cart</button>
+ 			</div>
+ 			<div class="col-lg-3 w20">
+ 				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEXt7e3V1dXW1tbm5ubs7Ozg4ODc3NzS0tLw8PDo6OjZ2dnj4+Pe3t5T9WAhAAAEmklEQVR4nO2ciXKsIBBFsQUB9f+/9+EuKjPEpe2X3FOVSTJlAmdaWRpUKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8Pbnh9mr4Uza+nnSpbChTTy0M/hNfKeNeXyIshW/BReaVZ4+h8zSY3lESG008rz+a30LIqFpbYDa1huxC1qovQDHAbUuG5DF3Tl8cmORdTs/Ua9VxuzUHXaA+WnsnQD90EUa1ZPlRtChoMuRobs5w0PLiGphJ5YlgNxVnGHrgeTlOuIkdD4imtx/B+qKNhzThOLF8xJE5D+4ohT2k9MLwZGD4ADG8Ghg8Aw5uB4QPINRxqdH14J9awmyG7summ5tfqJthQO1NY21wtUrKh7zJW9mqWTLLhcPDV9INYQ6XHqhXGXaqcXEM1L2/4S2k5qYbaNfP61LXEnFRDpWhJize/MIbrEAau1E6qoV75FfZKwlqmoVYmWiWmUp1ex5VpqKIQdhdkOG9/l2EcwuDYnu4UZRrq7frihSVOgYahKm2xUzw9eBNoqJy3O8Pi9CRDoqGqhv0+UQzpbKco0bAs9iEMVOeKlGeoVWpH0bnBmzxD5VMbbuhUJQUapkJI9tR5Ks+w+bBnqnRxXqr7razMx30d8gzTu4nI1nE1O8HWfkl0SDN0TXq7lKUwyYgqqrvDw9uftq1JM9RftoP57eF09PYaYYbOpNRG6vUIXLtqrH6bPk+FGX4LYdcpLripVSJbupSjMMNvISyiwZsu5sFdOlsly1Afa8Xn6Xzw9N96geTAXJShazMMi3I4WOsmejtlIMowbws4jRmbOOA2tV1dkGFoGbMMu9O0q24VZzpSSziCDKfttV8iSGOSv9wODRKjVkGGrs7Z/G0b1w/XdDy6Cz/b8rBIQYal3U7sj6j70WhoR+12AEt02CVKMdTpWVNk0TeZ4as5SgM0R8NTIYZDnTMYL7bjjpOO8uJCDFVeCKebX1Kt7tEcQ4xhXgjH/dPJgw96DCmGuyz3MdQ1pc4nj632QRRi+HXWNNJNghvz4cPwO0Uhht9nTeMfhqp+PGCf0BBimBnC8a8/fRzNdpFKhmFuCDOoZcYwa9aUyXZFXIThrTfO0qbHeN1QL+/exKbHeN1QZc6a8tnMMV431GHWdPM9s3W07/Z1Q+XKgxXfS8RZqfcN84bcP4LW6zfvG2YOuX9EGwavk9HrhvqBEEYbNt82/LTWdIFVVuptwweuwp6l23/bUD/zHJfVbsa3Df3nmcJpltP0bcPwziNR9GJaGqUbU91LG1g9BeN9w2v3GiSR0x8+9AAQSWOap4Hhzfx6Q1eNzxdiKU1F6yFshn0ILdPjcPoUCU2GLGVOeVG2p4u5aZWK68Lw/Vkavswdt/jmFDiN7A9WNB5hSf3WhoPpFKXrd9tmCi63irA8sI3mb+f2F58xvDF/n6VIwytXCFW/2Y7zyZ6TJVv3pPpnxPGzW655Ere9a+tpqLAVp2D/BNOa1TG54+1JfMXW4JDhDeCM9r5kwL+k92d4/vNFBAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Y/wDpoY2HBKwqLIAAAAASUVORK5CYII=" style="width: 100%; height: 175px;">
+ 				<span class="font-weight500">Apply iPad (Latest Model) Wifi-Fi</span>
+ 				<h4>$300</h4>
+ 				<button class="add_card">Add to cart</button>
+ 			</div>
+ 			<div class="col-lg-3 w20 ">
+ 				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEXt7e3V1dXW1tbm5ubs7Ozg4ODc3NzS0tLw8PDo6OjZ2dnj4+Pe3t5T9WAhAAAEmklEQVR4nO2ciXKsIBBFsQUB9f+/9+EuKjPEpe2X3FOVSTJlAmdaWRpUKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8Pbnh9mr4Uza+nnSpbChTTy0M/hNfKeNeXyIshW/BReaVZ4+h8zSY3lESG008rz+a30LIqFpbYDa1huxC1qovQDHAbUuG5DF3Tl8cmORdTs/Ua9VxuzUHXaA+WnsnQD90EUa1ZPlRtChoMuRobs5w0PLiGphJ5YlgNxVnGHrgeTlOuIkdD4imtx/B+qKNhzThOLF8xJE5D+4ohT2k9MLwZGD4ADG8Ghg8Aw5uB4QPINRxqdH14J9awmyG7summ5tfqJthQO1NY21wtUrKh7zJW9mqWTLLhcPDV9INYQ6XHqhXGXaqcXEM1L2/4S2k5qYbaNfP61LXEnFRDpWhJize/MIbrEAau1E6qoV75FfZKwlqmoVYmWiWmUp1ex5VpqKIQdhdkOG9/l2EcwuDYnu4UZRrq7frihSVOgYahKm2xUzw9eBNoqJy3O8Pi9CRDoqGqhv0+UQzpbKco0bAs9iEMVOeKlGeoVWpH0bnBmzxD5VMbbuhUJQUapkJI9tR5Ks+w+bBnqnRxXqr7razMx30d8gzTu4nI1nE1O8HWfkl0SDN0TXq7lKUwyYgqqrvDw9uftq1JM9RftoP57eF09PYaYYbOpNRG6vUIXLtqrH6bPk+FGX4LYdcpLripVSJbupSjMMNvISyiwZsu5sFdOlsly1Afa8Xn6Xzw9N96geTAXJShazMMi3I4WOsmejtlIMowbws4jRmbOOA2tV1dkGFoGbMMu9O0q24VZzpSSziCDKfttV8iSGOSv9wODRKjVkGGrs7Z/G0b1w/XdDy6Cz/b8rBIQYal3U7sj6j70WhoR+12AEt02CVKMdTpWVNk0TeZ4as5SgM0R8NTIYZDnTMYL7bjjpOO8uJCDFVeCKebX1Kt7tEcQ4xhXgjH/dPJgw96DCmGuyz3MdQ1pc4nj632QRRi+HXWNNJNghvz4cPwO0Uhht9nTeMfhqp+PGCf0BBimBnC8a8/fRzNdpFKhmFuCDOoZcYwa9aUyXZFXIThrTfO0qbHeN1QL+/exKbHeN1QZc6a8tnMMV431GHWdPM9s3W07/Z1Q+XKgxXfS8RZqfcN84bcP4LW6zfvG2YOuX9EGwavk9HrhvqBEEYbNt82/LTWdIFVVuptwweuwp6l23/bUD/zHJfVbsa3Df3nmcJpltP0bcPwziNR9GJaGqUbU91LG1g9BeN9w2v3GiSR0x8+9AAQSWOap4Hhzfx6Q1eNzxdiKU1F6yFshn0ILdPjcPoUCU2GLGVOeVG2p4u5aZWK68Lw/Vkavswdt/jmFDiN7A9WNB5hSf3WhoPpFKXrd9tmCi63irA8sI3mb+f2F58xvDF/n6VIwytXCFW/2Y7zyZ6TJVv3pPpnxPGzW655Ere9a+tpqLAVp2D/BNOa1TG54+1JfMXW4JDhDeCM9r5kwL+k92d4/vNFBAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Y/wDpoY2HBKwqLIAAAAASUVORK5CYII=" style="width: 100%; height: 175px;">
+ 				<span class="font-weight500">Apply iPad (Latest Model) Wifi-Fi</span>
+ 				<h4>$300</h4>
+ 				<button class="add_card">Add to cart</button>
+ 			</div>
+ 			<div class="col-lg-3 w20 ">
+ 				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEXt7e3V1dXW1tbm5ubs7Ozg4ODc3NzS0tLw8PDo6OjZ2dnj4+Pe3t5T9WAhAAAEmklEQVR4nO2ciXKsIBBFsQUB9f+/9+EuKjPEpe2X3FOVSTJlAmdaWRpUKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8Pbnh9mr4Uza+nnSpbChTTy0M/hNfKeNeXyIshW/BReaVZ4+h8zSY3lESG008rz+a30LIqFpbYDa1huxC1qovQDHAbUuG5DF3Tl8cmORdTs/Ua9VxuzUHXaA+WnsnQD90EUa1ZPlRtChoMuRobs5w0PLiGphJ5YlgNxVnGHrgeTlOuIkdD4imtx/B+qKNhzThOLF8xJE5D+4ohT2k9MLwZGD4ADG8Ghg8Aw5uB4QPINRxqdH14J9awmyG7summ5tfqJthQO1NY21wtUrKh7zJW9mqWTLLhcPDV9INYQ6XHqhXGXaqcXEM1L2/4S2k5qYbaNfP61LXEnFRDpWhJize/MIbrEAau1E6qoV75FfZKwlqmoVYmWiWmUp1ex5VpqKIQdhdkOG9/l2EcwuDYnu4UZRrq7frihSVOgYahKm2xUzw9eBNoqJy3O8Pi9CRDoqGqhv0+UQzpbKco0bAs9iEMVOeKlGeoVWpH0bnBmzxD5VMbbuhUJQUapkJI9tR5Ks+w+bBnqnRxXqr7razMx30d8gzTu4nI1nE1O8HWfkl0SDN0TXq7lKUwyYgqqrvDw9uftq1JM9RftoP57eF09PYaYYbOpNRG6vUIXLtqrH6bPk+FGX4LYdcpLripVSJbupSjMMNvISyiwZsu5sFdOlsly1Afa8Xn6Xzw9N96geTAXJShazMMi3I4WOsmejtlIMowbws4jRmbOOA2tV1dkGFoGbMMu9O0q24VZzpSSziCDKfttV8iSGOSv9wODRKjVkGGrs7Z/G0b1w/XdDy6Cz/b8rBIQYal3U7sj6j70WhoR+12AEt02CVKMdTpWVNk0TeZ4as5SgM0R8NTIYZDnTMYL7bjjpOO8uJCDFVeCKebX1Kt7tEcQ4xhXgjH/dPJgw96DCmGuyz3MdQ1pc4nj632QRRi+HXWNNJNghvz4cPwO0Uhht9nTeMfhqp+PGCf0BBimBnC8a8/fRzNdpFKhmFuCDOoZcYwa9aUyXZFXIThrTfO0qbHeN1QL+/exKbHeN1QZc6a8tnMMV431GHWdPM9s3W07/Z1Q+XKgxXfS8RZqfcN84bcP4LW6zfvG2YOuX9EGwavk9HrhvqBEEYbNt82/LTWdIFVVuptwweuwp6l23/bUD/zHJfVbsa3Df3nmcJpltP0bcPwziNR9GJaGqUbU91LG1g9BeN9w2v3GiSR0x8+9AAQSWOap4Hhzfx6Q1eNzxdiKU1F6yFshn0ILdPjcPoUCU2GLGVOeVG2p4u5aZWK68Lw/Vkavswdt/jmFDiN7A9WNB5hSf3WhoPpFKXrd9tmCi63irA8sI3mb+f2F58xvDF/n6VIwytXCFW/2Y7zyZ6TJVv3pPpnxPGzW655Ere9a+tpqLAVp2D/BNOa1TG54+1JfMXW4JDhDeCM9r5kwL+k92d4/vNFBAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Y/wDpoY2HBKwqLIAAAAASUVORK5CYII=" style="width: 100%; height: 175px;">
+ 				<span class="font-weight500">Apply iPad (Latest Model) Wifi-Fi</span>
+ 				<h4>$300</h4>
+ 				<button class="add_card">Add to cart</button>
+ 			</div>
+			<div class="col-lg-3 w20 ">
+ 				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEXt7e3V1dXW1tbm5ubs7Ozg4ODc3NzS0tLw8PDo6OjZ2dnj4+Pe3t5T9WAhAAAEmklEQVR4nO2ciXKsIBBFsQUB9f+/9+EuKjPEpe2X3FOVSTJlAmdaWRpUKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8Pbnh9mr4Uza+nnSpbChTTy0M/hNfKeNeXyIshW/BReaVZ4+h8zSY3lESG008rz+a30LIqFpbYDa1huxC1qovQDHAbUuG5DF3Tl8cmORdTs/Ua9VxuzUHXaA+WnsnQD90EUa1ZPlRtChoMuRobs5w0PLiGphJ5YlgNxVnGHrgeTlOuIkdD4imtx/B+qKNhzThOLF8xJE5D+4ohT2k9MLwZGD4ADG8Ghg8Aw5uB4QPINRxqdH14J9awmyG7summ5tfqJthQO1NY21wtUrKh7zJW9mqWTLLhcPDV9INYQ6XHqhXGXaqcXEM1L2/4S2k5qYbaNfP61LXEnFRDpWhJize/MIbrEAau1E6qoV75FfZKwlqmoVYmWiWmUp1ex5VpqKIQdhdkOG9/l2EcwuDYnu4UZRrq7frihSVOgYahKm2xUzw9eBNoqJy3O8Pi9CRDoqGqhv0+UQzpbKco0bAs9iEMVOeKlGeoVWpH0bnBmzxD5VMbbuhUJQUapkJI9tR5Ks+w+bBnqnRxXqr7razMx30d8gzTu4nI1nE1O8HWfkl0SDN0TXq7lKUwyYgqqrvDw9uftq1JM9RftoP57eF09PYaYYbOpNRG6vUIXLtqrH6bPk+FGX4LYdcpLripVSJbupSjMMNvISyiwZsu5sFdOlsly1Afa8Xn6Xzw9N96geTAXJShazMMi3I4WOsmejtlIMowbws4jRmbOOA2tV1dkGFoGbMMu9O0q24VZzpSSziCDKfttV8iSGOSv9wODRKjVkGGrs7Z/G0b1w/XdDy6Cz/b8rBIQYal3U7sj6j70WhoR+12AEt02CVKMdTpWVNk0TeZ4as5SgM0R8NTIYZDnTMYL7bjjpOO8uJCDFVeCKebX1Kt7tEcQ4xhXgjH/dPJgw96DCmGuyz3MdQ1pc4nj632QRRi+HXWNNJNghvz4cPwO0Uhht9nTeMfhqp+PGCf0BBimBnC8a8/fRzNdpFKhmFuCDOoZcYwa9aUyXZFXIThrTfO0qbHeN1QL+/exKbHeN1QZc6a8tnMMV431GHWdPM9s3W07/Z1Q+XKgxXfS8RZqfcN84bcP4LW6zfvG2YOuX9EGwavk9HrhvqBEEYbNt82/LTWdIFVVuptwweuwp6l23/bUD/zHJfVbsa3Df3nmcJpltP0bcPwziNR9GJaGqUbU91LG1g9BeN9w2v3GiSR0x8+9AAQSWOap4Hhzfx6Q1eNzxdiKU1F6yFshn0ILdPjcPoUCU2GLGVOeVG2p4u5aZWK68Lw/Vkavswdt/jmFDiN7A9WNB5hSf3WhoPpFKXrd9tmCi63irA8sI3mb+f2F58xvDF/n6VIwytXCFW/2Y7zyZ6TJVv3pPpnxPGzW655Ere9a+tpqLAVp2D/BNOa1TG54+1JfMXW4JDhDeCM9r5kwL+k92d4/vNFBAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Y/wDpoY2HBKwqLIAAAAASUVORK5CYII=" style="width: 100%; height: 175px;">
+ 				<span class="font-weight500">Apply iPad (Latest Model) Wifi-Fi</span>
+ 				<h4>$300</h4>
+ 				<button class="add_card">Add to cart</button>
+ 			</div>
+
+ 		</div>
+ 	</div>
+ 	<div class="mt-2 mb-2">
+ 		<div class="">
+ 			<div class="d-flex space-between fs-15 mt-3">
+ 			<div>
+ 				<h4 class="fs-15"> <b>Health & Beauty</b> </h4>
+ 			</div>
+ 			<div>
+ 				<a href="" style="color: black; font-weight: 600;">Shop All  <i class="fa fa-chevron-right"></i> </a>
+ 			</div>
+ 		</div>
+ 		</div>
+		<div class="row" style="    margin-left: -2px;">
+ 			<div class="col-lg-3 w20">
+ 				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEXt7e3V1dXW1tbm5ubs7Ozg4ODc3NzS0tLw8PDo6OjZ2dnj4+Pe3t5T9WAhAAAEmklEQVR4nO2ciXKsIBBFsQUB9f+/9+EuKjPEpe2X3FOVSTJlAmdaWRpUKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8Pbnh9mr4Uza+nnSpbChTTy0M/hNfKeNeXyIshW/BReaVZ4+h8zSY3lESG008rz+a30LIqFpbYDa1huxC1qovQDHAbUuG5DF3Tl8cmORdTs/Ua9VxuzUHXaA+WnsnQD90EUa1ZPlRtChoMuRobs5w0PLiGphJ5YlgNxVnGHrgeTlOuIkdD4imtx/B+qKNhzThOLF8xJE5D+4ohT2k9MLwZGD4ADG8Ghg8Aw5uB4QPINRxqdH14J9awmyG7summ5tfqJthQO1NY21wtUrKh7zJW9mqWTLLhcPDV9INYQ6XHqhXGXaqcXEM1L2/4S2k5qYbaNfP61LXEnFRDpWhJize/MIbrEAau1E6qoV75FfZKwlqmoVYmWiWmUp1ex5VpqKIQdhdkOG9/l2EcwuDYnu4UZRrq7frihSVOgYahKm2xUzw9eBNoqJy3O8Pi9CRDoqGqhv0+UQzpbKco0bAs9iEMVOeKlGeoVWpH0bnBmzxD5VMbbuhUJQUapkJI9tR5Ks+w+bBnqnRxXqr7razMx30d8gzTu4nI1nE1O8HWfkl0SDN0TXq7lKUwyYgqqrvDw9uftq1JM9RftoP57eF09PYaYYbOpNRG6vUIXLtqrH6bPk+FGX4LYdcpLripVSJbupSjMMNvISyiwZsu5sFdOlsly1Afa8Xn6Xzw9N96geTAXJShazMMi3I4WOsmejtlIMowbws4jRmbOOA2tV1dkGFoGbMMu9O0q24VZzpSSziCDKfttV8iSGOSv9wODRKjVkGGrs7Z/G0b1w/XdDy6Cz/b8rBIQYal3U7sj6j70WhoR+12AEt02CVKMdTpWVNk0TeZ4as5SgM0R8NTIYZDnTMYL7bjjpOO8uJCDFVeCKebX1Kt7tEcQ4xhXgjH/dPJgw96DCmGuyz3MdQ1pc4nj632QRRi+HXWNNJNghvz4cPwO0Uhht9nTeMfhqp+PGCf0BBimBnC8a8/fRzNdpFKhmFuCDOoZcYwa9aUyXZFXIThrTfO0qbHeN1QL+/exKbHeN1QZc6a8tnMMV431GHWdPM9s3W07/Z1Q+XKgxXfS8RZqfcN84bcP4LW6zfvG2YOuX9EGwavk9HrhvqBEEYbNt82/LTWdIFVVuptwweuwp6l23/bUD/zHJfVbsa3Df3nmcJpltP0bcPwziNR9GJaGqUbU91LG1g9BeN9w2v3GiSR0x8+9AAQSWOap4Hhzfx6Q1eNzxdiKU1F6yFshn0ILdPjcPoUCU2GLGVOeVG2p4u5aZWK68Lw/Vkavswdt/jmFDiN7A9WNB5hSf3WhoPpFKXrd9tmCi63irA8sI3mb+f2F58xvDF/n6VIwytXCFW/2Y7zyZ6TJVv3pPpnxPGzW655Ere9a+tpqLAVp2D/BNOa1TG54+1JfMXW4JDhDeCM9r5kwL+k92d4/vNFBAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Y/wDpoY2HBKwqLIAAAAASUVORK5CYII=" style="width: 100%; height: 175px;">
+ 				<span class="font-weight500">Apply iPad (Latest Model) Wifi-Fi</span>
+ 				<h4>$300</h4>
+ 				<button class="add_card">Add to cart</button>
+ 			</div>
+ 			<div class="col-lg-3 w20">
+ 				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEXt7e3V1dXW1tbm5ubs7Ozg4ODc3NzS0tLw8PDo6OjZ2dnj4+Pe3t5T9WAhAAAEmklEQVR4nO2ciXKsIBBFsQUB9f+/9+EuKjPEpe2X3FOVSTJlAmdaWRpUKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8Pbnh9mr4Uza+nnSpbChTTy0M/hNfKeNeXyIshW/BReaVZ4+h8zSY3lESG008rz+a30LIqFpbYDa1huxC1qovQDHAbUuG5DF3Tl8cmORdTs/Ua9VxuzUHXaA+WnsnQD90EUa1ZPlRtChoMuRobs5w0PLiGphJ5YlgNxVnGHrgeTlOuIkdD4imtx/B+qKNhzThOLF8xJE5D+4ohT2k9MLwZGD4ADG8Ghg8Aw5uB4QPINRxqdH14J9awmyG7summ5tfqJthQO1NY21wtUrKh7zJW9mqWTLLhcPDV9INYQ6XHqhXGXaqcXEM1L2/4S2k5qYbaNfP61LXEnFRDpWhJize/MIbrEAau1E6qoV75FfZKwlqmoVYmWiWmUp1ex5VpqKIQdhdkOG9/l2EcwuDYnu4UZRrq7frihSVOgYahKm2xUzw9eBNoqJy3O8Pi9CRDoqGqhv0+UQzpbKco0bAs9iEMVOeKlGeoVWpH0bnBmzxD5VMbbuhUJQUapkJI9tR5Ks+w+bBnqnRxXqr7razMx30d8gzTu4nI1nE1O8HWfkl0SDN0TXq7lKUwyYgqqrvDw9uftq1JM9RftoP57eF09PYaYYbOpNRG6vUIXLtqrH6bPk+FGX4LYdcpLripVSJbupSjMMNvISyiwZsu5sFdOlsly1Afa8Xn6Xzw9N96geTAXJShazMMi3I4WOsmejtlIMowbws4jRmbOOA2tV1dkGFoGbMMu9O0q24VZzpSSziCDKfttV8iSGOSv9wODRKjVkGGrs7Z/G0b1w/XdDy6Cz/b8rBIQYal3U7sj6j70WhoR+12AEt02CVKMdTpWVNk0TeZ4as5SgM0R8NTIYZDnTMYL7bjjpOO8uJCDFVeCKebX1Kt7tEcQ4xhXgjH/dPJgw96DCmGuyz3MdQ1pc4nj632QRRi+HXWNNJNghvz4cPwO0Uhht9nTeMfhqp+PGCf0BBimBnC8a8/fRzNdpFKhmFuCDOoZcYwa9aUyXZFXIThrTfO0qbHeN1QL+/exKbHeN1QZc6a8tnMMV431GHWdPM9s3W07/Z1Q+XKgxXfS8RZqfcN84bcP4LW6zfvG2YOuX9EGwavk9HrhvqBEEYbNt82/LTWdIFVVuptwweuwp6l23/bUD/zHJfVbsa3Df3nmcJpltP0bcPwziNR9GJaGqUbU91LG1g9BeN9w2v3GiSR0x8+9AAQSWOap4Hhzfx6Q1eNzxdiKU1F6yFshn0ILdPjcPoUCU2GLGVOeVG2p4u5aZWK68Lw/Vkavswdt/jmFDiN7A9WNB5hSf3WhoPpFKXrd9tmCi63irA8sI3mb+f2F58xvDF/n6VIwytXCFW/2Y7zyZ6TJVv3pPpnxPGzW655Ere9a+tpqLAVp2D/BNOa1TG54+1JfMXW4JDhDeCM9r5kwL+k92d4/vNFBAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Y/wDpoY2HBKwqLIAAAAASUVORK5CYII=" style="width: 100%; height: 175px;">
+ 				<span class="font-weight500">Apply iPad (Latest Model) Wifi-Fi</span>
+ 				<h4>$300</h4>
+ 				<button class="add_card">Add to cart</button>
+ 			</div>
+ 			<div class="col-lg-3 w20 ">
+ 				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEXt7e3V1dXW1tbm5ubs7Ozg4ODc3NzS0tLw8PDo6OjZ2dnj4+Pe3t5T9WAhAAAEmklEQVR4nO2ciXKsIBBFsQUB9f+/9+EuKjPEpe2X3FOVSTJlAmdaWRpUKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8Pbnh9mr4Uza+nnSpbChTTy0M/hNfKeNeXyIshW/BReaVZ4+h8zSY3lESG008rz+a30LIqFpbYDa1huxC1qovQDHAbUuG5DF3Tl8cmORdTs/Ua9VxuzUHXaA+WnsnQD90EUa1ZPlRtChoMuRobs5w0PLiGphJ5YlgNxVnGHrgeTlOuIkdD4imtx/B+qKNhzThOLF8xJE5D+4ohT2k9MLwZGD4ADG8Ghg8Aw5uB4QPINRxqdH14J9awmyG7summ5tfqJthQO1NY21wtUrKh7zJW9mqWTLLhcPDV9INYQ6XHqhXGXaqcXEM1L2/4S2k5qYbaNfP61LXEnFRDpWhJize/MIbrEAau1E6qoV75FfZKwlqmoVYmWiWmUp1ex5VpqKIQdhdkOG9/l2EcwuDYnu4UZRrq7frihSVOgYahKm2xUzw9eBNoqJy3O8Pi9CRDoqGqhv0+UQzpbKco0bAs9iEMVOeKlGeoVWpH0bnBmzxD5VMbbuhUJQUapkJI9tR5Ks+w+bBnqnRxXqr7razMx30d8gzTu4nI1nE1O8HWfkl0SDN0TXq7lKUwyYgqqrvDw9uftq1JM9RftoP57eF09PYaYYbOpNRG6vUIXLtqrH6bPk+FGX4LYdcpLripVSJbupSjMMNvISyiwZsu5sFdOlsly1Afa8Xn6Xzw9N96geTAXJShazMMi3I4WOsmejtlIMowbws4jRmbOOA2tV1dkGFoGbMMu9O0q24VZzpSSziCDKfttV8iSGOSv9wODRKjVkGGrs7Z/G0b1w/XdDy6Cz/b8rBIQYal3U7sj6j70WhoR+12AEt02CVKMdTpWVNk0TeZ4as5SgM0R8NTIYZDnTMYL7bjjpOO8uJCDFVeCKebX1Kt7tEcQ4xhXgjH/dPJgw96DCmGuyz3MdQ1pc4nj632QRRi+HXWNNJNghvz4cPwO0Uhht9nTeMfhqp+PGCf0BBimBnC8a8/fRzNdpFKhmFuCDOoZcYwa9aUyXZFXIThrTfO0qbHeN1QL+/exKbHeN1QZc6a8tnMMV431GHWdPM9s3W07/Z1Q+XKgxXfS8RZqfcN84bcP4LW6zfvG2YOuX9EGwavk9HrhvqBEEYbNt82/LTWdIFVVuptwweuwp6l23/bUD/zHJfVbsa3Df3nmcJpltP0bcPwziNR9GJaGqUbU91LG1g9BeN9w2v3GiSR0x8+9AAQSWOap4Hhzfx6Q1eNzxdiKU1F6yFshn0ILdPjcPoUCU2GLGVOeVG2p4u5aZWK68Lw/Vkavswdt/jmFDiN7A9WNB5hSf3WhoPpFKXrd9tmCi63irA8sI3mb+f2F58xvDF/n6VIwytXCFW/2Y7zyZ6TJVv3pPpnxPGzW655Ere9a+tpqLAVp2D/BNOa1TG54+1JfMXW4JDhDeCM9r5kwL+k92d4/vNFBAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Y/wDpoY2HBKwqLIAAAAASUVORK5CYII=" style="width: 100%; height: 175px;">
+ 				<span class="font-weight500">Apply iPad (Latest Model) Wifi-Fi</span>
+ 				<h4>$300</h4>
+ 				<button class="add_card">Add to cart</button>
+ 			</div>
+ 			<div class="col-lg-3 w20 ">
+ 				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEXt7e3V1dXW1tbm5ubs7Ozg4ODc3NzS0tLw8PDo6OjZ2dnj4+Pe3t5T9WAhAAAEmklEQVR4nO2ciXKsIBBFsQUB9f+/9+EuKjPEpe2X3FOVSTJlAmdaWRpUKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8Pbnh9mr4Uza+nnSpbChTTy0M/hNfKeNeXyIshW/BReaVZ4+h8zSY3lESG008rz+a30LIqFpbYDa1huxC1qovQDHAbUuG5DF3Tl8cmORdTs/Ua9VxuzUHXaA+WnsnQD90EUa1ZPlRtChoMuRobs5w0PLiGphJ5YlgNxVnGHrgeTlOuIkdD4imtx/B+qKNhzThOLF8xJE5D+4ohT2k9MLwZGD4ADG8Ghg8Aw5uB4QPINRxqdH14J9awmyG7summ5tfqJthQO1NY21wtUrKh7zJW9mqWTLLhcPDV9INYQ6XHqhXGXaqcXEM1L2/4S2k5qYbaNfP61LXEnFRDpWhJize/MIbrEAau1E6qoV75FfZKwlqmoVYmWiWmUp1ex5VpqKIQdhdkOG9/l2EcwuDYnu4UZRrq7frihSVOgYahKm2xUzw9eBNoqJy3O8Pi9CRDoqGqhv0+UQzpbKco0bAs9iEMVOeKlGeoVWpH0bnBmzxD5VMbbuhUJQUapkJI9tR5Ks+w+bBnqnRxXqr7razMx30d8gzTu4nI1nE1O8HWfkl0SDN0TXq7lKUwyYgqqrvDw9uftq1JM9RftoP57eF09PYaYYbOpNRG6vUIXLtqrH6bPk+FGX4LYdcpLripVSJbupSjMMNvISyiwZsu5sFdOlsly1Afa8Xn6Xzw9N96geTAXJShazMMi3I4WOsmejtlIMowbws4jRmbOOA2tV1dkGFoGbMMu9O0q24VZzpSSziCDKfttV8iSGOSv9wODRKjVkGGrs7Z/G0b1w/XdDy6Cz/b8rBIQYal3U7sj6j70WhoR+12AEt02CVKMdTpWVNk0TeZ4as5SgM0R8NTIYZDnTMYL7bjjpOO8uJCDFVeCKebX1Kt7tEcQ4xhXgjH/dPJgw96DCmGuyz3MdQ1pc4nj632QRRi+HXWNNJNghvz4cPwO0Uhht9nTeMfhqp+PGCf0BBimBnC8a8/fRzNdpFKhmFuCDOoZcYwa9aUyXZFXIThrTfO0qbHeN1QL+/exKbHeN1QZc6a8tnMMV431GHWdPM9s3W07/Z1Q+XKgxXfS8RZqfcN84bcP4LW6zfvG2YOuX9EGwavk9HrhvqBEEYbNt82/LTWdIFVVuptwweuwp6l23/bUD/zHJfVbsa3Df3nmcJpltP0bcPwziNR9GJaGqUbU91LG1g9BeN9w2v3GiSR0x8+9AAQSWOap4Hhzfx6Q1eNzxdiKU1F6yFshn0ILdPjcPoUCU2GLGVOeVG2p4u5aZWK68Lw/Vkavswdt/jmFDiN7A9WNB5hSf3WhoPpFKXrd9tmCi63irA8sI3mb+f2F58xvDF/n6VIwytXCFW/2Y7zyZ6TJVv3pPpnxPGzW655Ere9a+tpqLAVp2D/BNOa1TG54+1JfMXW4JDhDeCM9r5kwL+k92d4/vNFBAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Y/wDpoY2HBKwqLIAAAAASUVORK5CYII=" style="width: 100%; height: 175px;">
+ 				<span class="font-weight500">Apply iPad (Latest Model) Wifi-Fi</span>
+ 				<h4>$300</h4>
+ 				<button class="add_card">Add to cart</button>
+ 			</div>
+			<div class="col-lg-3 w20 ">
+ 				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEXt7e3V1dXW1tbm5ubs7Ozg4ODc3NzS0tLw8PDo6OjZ2dnj4+Pe3t5T9WAhAAAEmklEQVR4nO2ciXKsIBBFsQUB9f+/9+EuKjPEpe2X3FOVSTJlAmdaWRpUKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8Pbnh9mr4Uza+nnSpbChTTy0M/hNfKeNeXyIshW/BReaVZ4+h8zSY3lESG008rz+a30LIqFpbYDa1huxC1qovQDHAbUuG5DF3Tl8cmORdTs/Ua9VxuzUHXaA+WnsnQD90EUa1ZPlRtChoMuRobs5w0PLiGphJ5YlgNxVnGHrgeTlOuIkdD4imtx/B+qKNhzThOLF8xJE5D+4ohT2k9MLwZGD4ADG8Ghg8Aw5uB4QPINRxqdH14J9awmyG7summ5tfqJthQO1NY21wtUrKh7zJW9mqWTLLhcPDV9INYQ6XHqhXGXaqcXEM1L2/4S2k5qYbaNfP61LXEnFRDpWhJize/MIbrEAau1E6qoV75FfZKwlqmoVYmWiWmUp1ex5VpqKIQdhdkOG9/l2EcwuDYnu4UZRrq7frihSVOgYahKm2xUzw9eBNoqJy3O8Pi9CRDoqGqhv0+UQzpbKco0bAs9iEMVOeKlGeoVWpH0bnBmzxD5VMbbuhUJQUapkJI9tR5Ks+w+bBnqnRxXqr7razMx30d8gzTu4nI1nE1O8HWfkl0SDN0TXq7lKUwyYgqqrvDw9uftq1JM9RftoP57eF09PYaYYbOpNRG6vUIXLtqrH6bPk+FGX4LYdcpLripVSJbupSjMMNvISyiwZsu5sFdOlsly1Afa8Xn6Xzw9N96geTAXJShazMMi3I4WOsmejtlIMowbws4jRmbOOA2tV1dkGFoGbMMu9O0q24VZzpSSziCDKfttV8iSGOSv9wODRKjVkGGrs7Z/G0b1w/XdDy6Cz/b8rBIQYal3U7sj6j70WhoR+12AEt02CVKMdTpWVNk0TeZ4as5SgM0R8NTIYZDnTMYL7bjjpOO8uJCDFVeCKebX1Kt7tEcQ4xhXgjH/dPJgw96DCmGuyz3MdQ1pc4nj632QRRi+HXWNNJNghvz4cPwO0Uhht9nTeMfhqp+PGCf0BBimBnC8a8/fRzNdpFKhmFuCDOoZcYwa9aUyXZFXIThrTfO0qbHeN1QL+/exKbHeN1QZc6a8tnMMV431GHWdPM9s3W07/Z1Q+XKgxXfS8RZqfcN84bcP4LW6zfvG2YOuX9EGwavk9HrhvqBEEYbNt82/LTWdIFVVuptwweuwp6l23/bUD/zHJfVbsa3Df3nmcJpltP0bcPwziNR9GJaGqUbU91LG1g9BeN9w2v3GiSR0x8+9AAQSWOap4Hhzfx6Q1eNzxdiKU1F6yFshn0ILdPjcPoUCU2GLGVOeVG2p4u5aZWK68Lw/Vkavswdt/jmFDiN7A9WNB5hSf3WhoPpFKXrd9tmCi63irA8sI3mb+f2F58xvDF/n6VIwytXCFW/2Y7zyZ6TJVv3pPpnxPGzW655Ere9a+tpqLAVp2D/BNOa1TG54+1JfMXW4JDhDeCM9r5kwL+k92d4/vNFBAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Y/wDpoY2HBKwqLIAAAAASUVORK5CYII=" style="width: 100%; height: 175px;">
+ 				<span class="font-weight500">Apply iPad (Latest Model) Wifi-Fi</span>
+ 				<h4>$300</h4>
+ 				<button class="add_card">Add to cart</button>
+ 			</div>
+
+ 		</div>
+ 	</div>
+ 	<div class="mt-2 mb-2">
+ 		<div class="">
+ 			<div class="d-flex space-between fs-15 mt-3">
+ 			<div>
+ 				<h4 class="fs-15"> <b>Electronics</b> </h4>
+ 			</div>
+ 			<div>
+ 				<a href="" style="color: black; font-weight: 600;">Shop All  <i class="fa fa-chevron-right"></i> </a>
+ 			</div>
+ 		</div>
+ 		</div>
+		<div class="row" style="    margin-left: -2px;">
+ 			<div class="col-lg-3 w20">
+ 				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEXt7e3V1dXW1tbm5ubs7Ozg4ODc3NzS0tLw8PDo6OjZ2dnj4+Pe3t5T9WAhAAAEmklEQVR4nO2ciXKsIBBFsQUB9f+/9+EuKjPEpe2X3FOVSTJlAmdaWRpUKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8Pbnh9mr4Uza+nnSpbChTTy0M/hNfKeNeXyIshW/BReaVZ4+h8zSY3lESG008rz+a30LIqFpbYDa1huxC1qovQDHAbUuG5DF3Tl8cmORdTs/Ua9VxuzUHXaA+WnsnQD90EUa1ZPlRtChoMuRobs5w0PLiGphJ5YlgNxVnGHrgeTlOuIkdD4imtx/B+qKNhzThOLF8xJE5D+4ohT2k9MLwZGD4ADG8Ghg8Aw5uB4QPINRxqdH14J9awmyG7summ5tfqJthQO1NY21wtUrKh7zJW9mqWTLLhcPDV9INYQ6XHqhXGXaqcXEM1L2/4S2k5qYbaNfP61LXEnFRDpWhJize/MIbrEAau1E6qoV75FfZKwlqmoVYmWiWmUp1ex5VpqKIQdhdkOG9/l2EcwuDYnu4UZRrq7frihSVOgYahKm2xUzw9eBNoqJy3O8Pi9CRDoqGqhv0+UQzpbKco0bAs9iEMVOeKlGeoVWpH0bnBmzxD5VMbbuhUJQUapkJI9tR5Ks+w+bBnqnRxXqr7razMx30d8gzTu4nI1nE1O8HWfkl0SDN0TXq7lKUwyYgqqrvDw9uftq1JM9RftoP57eF09PYaYYbOpNRG6vUIXLtqrH6bPk+FGX4LYdcpLripVSJbupSjMMNvISyiwZsu5sFdOlsly1Afa8Xn6Xzw9N96geTAXJShazMMi3I4WOsmejtlIMowbws4jRmbOOA2tV1dkGFoGbMMu9O0q24VZzpSSziCDKfttV8iSGOSv9wODRKjVkGGrs7Z/G0b1w/XdDy6Cz/b8rBIQYal3U7sj6j70WhoR+12AEt02CVKMdTpWVNk0TeZ4as5SgM0R8NTIYZDnTMYL7bjjpOO8uJCDFVeCKebX1Kt7tEcQ4xhXgjH/dPJgw96DCmGuyz3MdQ1pc4nj632QRRi+HXWNNJNghvz4cPwO0Uhht9nTeMfhqp+PGCf0BBimBnC8a8/fRzNdpFKhmFuCDOoZcYwa9aUyXZFXIThrTfO0qbHeN1QL+/exKbHeN1QZc6a8tnMMV431GHWdPM9s3W07/Z1Q+XKgxXfS8RZqfcN84bcP4LW6zfvG2YOuX9EGwavk9HrhvqBEEYbNt82/LTWdIFVVuptwweuwp6l23/bUD/zHJfVbsa3Df3nmcJpltP0bcPwziNR9GJaGqUbU91LG1g9BeN9w2v3GiSR0x8+9AAQSWOap4Hhzfx6Q1eNzxdiKU1F6yFshn0ILdPjcPoUCU2GLGVOeVG2p4u5aZWK68Lw/Vkavswdt/jmFDiN7A9WNB5hSf3WhoPpFKXrd9tmCi63irA8sI3mb+f2F58xvDF/n6VIwytXCFW/2Y7zyZ6TJVv3pPpnxPGzW655Ere9a+tpqLAVp2D/BNOa1TG54+1JfMXW4JDhDeCM9r5kwL+k92d4/vNFBAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Y/wDpoY2HBKwqLIAAAAASUVORK5CYII=" style="width: 100%; height: 175px;">
+ 				<span class="font-weight500">Apply iPad (Latest Model) Wifi-Fi</span>
+ 				<h4>$300</h4>
+ 				<button class="add_card">Add to cart</button>
+ 			</div>
+ 			<div class="col-lg-3 w20">
+ 				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEXt7e3V1dXW1tbm5ubs7Ozg4ODc3NzS0tLw8PDo6OjZ2dnj4+Pe3t5T9WAhAAAEmklEQVR4nO2ciXKsIBBFsQUB9f+/9+EuKjPEpe2X3FOVSTJlAmdaWRpUKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8Pbnh9mr4Uza+nnSpbChTTy0M/hNfKeNeXyIshW/BReaVZ4+h8zSY3lESG008rz+a30LIqFpbYDa1huxC1qovQDHAbUuG5DF3Tl8cmORdTs/Ua9VxuzUHXaA+WnsnQD90EUa1ZPlRtChoMuRobs5w0PLiGphJ5YlgNxVnGHrgeTlOuIkdD4imtx/B+qKNhzThOLF8xJE5D+4ohT2k9MLwZGD4ADG8Ghg8Aw5uB4QPINRxqdH14J9awmyG7summ5tfqJthQO1NY21wtUrKh7zJW9mqWTLLhcPDV9INYQ6XHqhXGXaqcXEM1L2/4S2k5qYbaNfP61LXEnFRDpWhJize/MIbrEAau1E6qoV75FfZKwlqmoVYmWiWmUp1ex5VpqKIQdhdkOG9/l2EcwuDYnu4UZRrq7frihSVOgYahKm2xUzw9eBNoqJy3O8Pi9CRDoqGqhv0+UQzpbKco0bAs9iEMVOeKlGeoVWpH0bnBmzxD5VMbbuhUJQUapkJI9tR5Ks+w+bBnqnRxXqr7razMx30d8gzTu4nI1nE1O8HWfkl0SDN0TXq7lKUwyYgqqrvDw9uftq1JM9RftoP57eF09PYaYYbOpNRG6vUIXLtqrH6bPk+FGX4LYdcpLripVSJbupSjMMNvISyiwZsu5sFdOlsly1Afa8Xn6Xzw9N96geTAXJShazMMi3I4WOsmejtlIMowbws4jRmbOOA2tV1dkGFoGbMMu9O0q24VZzpSSziCDKfttV8iSGOSv9wODRKjVkGGrs7Z/G0b1w/XdDy6Cz/b8rBIQYal3U7sj6j70WhoR+12AEt02CVKMdTpWVNk0TeZ4as5SgM0R8NTIYZDnTMYL7bjjpOO8uJCDFVeCKebX1Kt7tEcQ4xhXgjH/dPJgw96DCmGuyz3MdQ1pc4nj632QRRi+HXWNNJNghvz4cPwO0Uhht9nTeMfhqp+PGCf0BBimBnC8a8/fRzNdpFKhmFuCDOoZcYwa9aUyXZFXIThrTfO0qbHeN1QL+/exKbHeN1QZc6a8tnMMV431GHWdPM9s3W07/Z1Q+XKgxXfS8RZqfcN84bcP4LW6zfvG2YOuX9EGwavk9HrhvqBEEYbNt82/LTWdIFVVuptwweuwp6l23/bUD/zHJfVbsa3Df3nmcJpltP0bcPwziNR9GJaGqUbU91LG1g9BeN9w2v3GiSR0x8+9AAQSWOap4Hhzfx6Q1eNzxdiKU1F6yFshn0ILdPjcPoUCU2GLGVOeVG2p4u5aZWK68Lw/Vkavswdt/jmFDiN7A9WNB5hSf3WhoPpFKXrd9tmCi63irA8sI3mb+f2F58xvDF/n6VIwytXCFW/2Y7zyZ6TJVv3pPpnxPGzW655Ere9a+tpqLAVp2D/BNOa1TG54+1JfMXW4JDhDeCM9r5kwL+k92d4/vNFBAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Y/wDpoY2HBKwqLIAAAAASUVORK5CYII=" style="width: 100%; height: 175px;">
+ 				<span class="font-weight500">Apply iPad (Latest Model) Wifi-Fi</span>
+ 				<h4>$300</h4>
+ 				<button class="add_card">Add to cart</button>
+ 			</div>
+ 			<div class="col-lg-3 w20 ">
+ 				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEXt7e3V1dXW1tbm5ubs7Ozg4ODc3NzS0tLw8PDo6OjZ2dnj4+Pe3t5T9WAhAAAEmklEQVR4nO2ciXKsIBBFsQUB9f+/9+EuKjPEpe2X3FOVSTJlAmdaWRpUKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8Pbnh9mr4Uza+nnSpbChTTy0M/hNfKeNeXyIshW/BReaVZ4+h8zSY3lESG008rz+a30LIqFpbYDa1huxC1qovQDHAbUuG5DF3Tl8cmORdTs/Ua9VxuzUHXaA+WnsnQD90EUa1ZPlRtChoMuRobs5w0PLiGphJ5YlgNxVnGHrgeTlOuIkdD4imtx/B+qKNhzThOLF8xJE5D+4ohT2k9MLwZGD4ADG8Ghg8Aw5uB4QPINRxqdH14J9awmyG7summ5tfqJthQO1NY21wtUrKh7zJW9mqWTLLhcPDV9INYQ6XHqhXGXaqcXEM1L2/4S2k5qYbaNfP61LXEnFRDpWhJize/MIbrEAau1E6qoV75FfZKwlqmoVYmWiWmUp1ex5VpqKIQdhdkOG9/l2EcwuDYnu4UZRrq7frihSVOgYahKm2xUzw9eBNoqJy3O8Pi9CRDoqGqhv0+UQzpbKco0bAs9iEMVOeKlGeoVWpH0bnBmzxD5VMbbuhUJQUapkJI9tR5Ks+w+bBnqnRxXqr7razMx30d8gzTu4nI1nE1O8HWfkl0SDN0TXq7lKUwyYgqqrvDw9uftq1JM9RftoP57eF09PYaYYbOpNRG6vUIXLtqrH6bPk+FGX4LYdcpLripVSJbupSjMMNvISyiwZsu5sFdOlsly1Afa8Xn6Xzw9N96geTAXJShazMMi3I4WOsmejtlIMowbws4jRmbOOA2tV1dkGFoGbMMu9O0q24VZzpSSziCDKfttV8iSGOSv9wODRKjVkGGrs7Z/G0b1w/XdDy6Cz/b8rBIQYal3U7sj6j70WhoR+12AEt02CVKMdTpWVNk0TeZ4as5SgM0R8NTIYZDnTMYL7bjjpOO8uJCDFVeCKebX1Kt7tEcQ4xhXgjH/dPJgw96DCmGuyz3MdQ1pc4nj632QRRi+HXWNNJNghvz4cPwO0Uhht9nTeMfhqp+PGCf0BBimBnC8a8/fRzNdpFKhmFuCDOoZcYwa9aUyXZFXIThrTfO0qbHeN1QL+/exKbHeN1QZc6a8tnMMV431GHWdPM9s3W07/Z1Q+XKgxXfS8RZqfcN84bcP4LW6zfvG2YOuX9EGwavk9HrhvqBEEYbNt82/LTWdIFVVuptwweuwp6l23/bUD/zHJfVbsa3Df3nmcJpltP0bcPwziNR9GJaGqUbU91LG1g9BeN9w2v3GiSR0x8+9AAQSWOap4Hhzfx6Q1eNzxdiKU1F6yFshn0ILdPjcPoUCU2GLGVOeVG2p4u5aZWK68Lw/Vkavswdt/jmFDiN7A9WNB5hSf3WhoPpFKXrd9tmCi63irA8sI3mb+f2F58xvDF/n6VIwytXCFW/2Y7zyZ6TJVv3pPpnxPGzW655Ere9a+tpqLAVp2D/BNOa1TG54+1JfMXW4JDhDeCM9r5kwL+k92d4/vNFBAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Y/wDpoY2HBKwqLIAAAAASUVORK5CYII=" style="width: 100%; height: 175px;">
+ 				<span class="font-weight500">Apply iPad (Latest Model) Wifi-Fi</span>
+ 				<h4>$300</h4>
+ 				<button class="add_card">Add to cart</button>
+ 			</div>
+ 			<div class="col-lg-3 w20 ">
+ 				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEXt7e3V1dXW1tbm5ubs7Ozg4ODc3NzS0tLw8PDo6OjZ2dnj4+Pe3t5T9WAhAAAEmklEQVR4nO2ciXKsIBBFsQUB9f+/9+EuKjPEpe2X3FOVSTJlAmdaWRpUKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8Pbnh9mr4Uza+nnSpbChTTy0M/hNfKeNeXyIshW/BReaVZ4+h8zSY3lESG008rz+a30LIqFpbYDa1huxC1qovQDHAbUuG5DF3Tl8cmORdTs/Ua9VxuzUHXaA+WnsnQD90EUa1ZPlRtChoMuRobs5w0PLiGphJ5YlgNxVnGHrgeTlOuIkdD4imtx/B+qKNhzThOLF8xJE5D+4ohT2k9MLwZGD4ADG8Ghg8Aw5uB4QPINRxqdH14J9awmyG7summ5tfqJthQO1NY21wtUrKh7zJW9mqWTLLhcPDV9INYQ6XHqhXGXaqcXEM1L2/4S2k5qYbaNfP61LXEnFRDpWhJize/MIbrEAau1E6qoV75FfZKwlqmoVYmWiWmUp1ex5VpqKIQdhdkOG9/l2EcwuDYnu4UZRrq7frihSVOgYahKm2xUzw9eBNoqJy3O8Pi9CRDoqGqhv0+UQzpbKco0bAs9iEMVOeKlGeoVWpH0bnBmzxD5VMbbuhUJQUapkJI9tR5Ks+w+bBnqnRxXqr7razMx30d8gzTu4nI1nE1O8HWfkl0SDN0TXq7lKUwyYgqqrvDw9uftq1JM9RftoP57eF09PYaYYbOpNRG6vUIXLtqrH6bPk+FGX4LYdcpLripVSJbupSjMMNvISyiwZsu5sFdOlsly1Afa8Xn6Xzw9N96geTAXJShazMMi3I4WOsmejtlIMowbws4jRmbOOA2tV1dkGFoGbMMu9O0q24VZzpSSziCDKfttV8iSGOSv9wODRKjVkGGrs7Z/G0b1w/XdDy6Cz/b8rBIQYal3U7sj6j70WhoR+12AEt02CVKMdTpWVNk0TeZ4as5SgM0R8NTIYZDnTMYL7bjjpOO8uJCDFVeCKebX1Kt7tEcQ4xhXgjH/dPJgw96DCmGuyz3MdQ1pc4nj632QRRi+HXWNNJNghvz4cPwO0Uhht9nTeMfhqp+PGCf0BBimBnC8a8/fRzNdpFKhmFuCDOoZcYwa9aUyXZFXIThrTfO0qbHeN1QL+/exKbHeN1QZc6a8tnMMV431GHWdPM9s3W07/Z1Q+XKgxXfS8RZqfcN84bcP4LW6zfvG2YOuX9EGwavk9HrhvqBEEYbNt82/LTWdIFVVuptwweuwp6l23/bUD/zHJfVbsa3Df3nmcJpltP0bcPwziNR9GJaGqUbU91LG1g9BeN9w2v3GiSR0x8+9AAQSWOap4Hhzfx6Q1eNzxdiKU1F6yFshn0ILdPjcPoUCU2GLGVOeVG2p4u5aZWK68Lw/Vkavswdt/jmFDiN7A9WNB5hSf3WhoPpFKXrd9tmCi63irA8sI3mb+f2F58xvDF/n6VIwytXCFW/2Y7zyZ6TJVv3pPpnxPGzW655Ere9a+tpqLAVp2D/BNOa1TG54+1JfMXW4JDhDeCM9r5kwL+k92d4/vNFBAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Y/wDpoY2HBKwqLIAAAAASUVORK5CYII=" style="width: 100%; height: 175px;">
+ 				<span class="font-weight500">Apply iPad (Latest Model) Wifi-Fi</span>
+ 				<h4>$300</h4>
+ 				<button class="add_card">Add to cart</button>
+ 			</div>
+			<div class="col-lg-3 w20 ">
+ 				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEXt7e3V1dXW1tbm5ubs7Ozg4ODc3NzS0tLw8PDo6OjZ2dnj4+Pe3t5T9WAhAAAEmklEQVR4nO2ciXKsIBBFsQUB9f+/9+EuKjPEpe2X3FOVSTJlAmdaWRpUKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8Pbnh9mr4Uza+nnSpbChTTy0M/hNfKeNeXyIshW/BReaVZ4+h8zSY3lESG008rz+a30LIqFpbYDa1huxC1qovQDHAbUuG5DF3Tl8cmORdTs/Ua9VxuzUHXaA+WnsnQD90EUa1ZPlRtChoMuRobs5w0PLiGphJ5YlgNxVnGHrgeTlOuIkdD4imtx/B+qKNhzThOLF8xJE5D+4ohT2k9MLwZGD4ADG8Ghg8Aw5uB4QPINRxqdH14J9awmyG7summ5tfqJthQO1NY21wtUrKh7zJW9mqWTLLhcPDV9INYQ6XHqhXGXaqcXEM1L2/4S2k5qYbaNfP61LXEnFRDpWhJize/MIbrEAau1E6qoV75FfZKwlqmoVYmWiWmUp1ex5VpqKIQdhdkOG9/l2EcwuDYnu4UZRrq7frihSVOgYahKm2xUzw9eBNoqJy3O8Pi9CRDoqGqhv0+UQzpbKco0bAs9iEMVOeKlGeoVWpH0bnBmzxD5VMbbuhUJQUapkJI9tR5Ks+w+bBnqnRxXqr7razMx30d8gzTu4nI1nE1O8HWfkl0SDN0TXq7lKUwyYgqqrvDw9uftq1JM9RftoP57eF09PYaYYbOpNRG6vUIXLtqrH6bPk+FGX4LYdcpLripVSJbupSjMMNvISyiwZsu5sFdOlsly1Afa8Xn6Xzw9N96geTAXJShazMMi3I4WOsmejtlIMowbws4jRmbOOA2tV1dkGFoGbMMu9O0q24VZzpSSziCDKfttV8iSGOSv9wODRKjVkGGrs7Z/G0b1w/XdDy6Cz/b8rBIQYal3U7sj6j70WhoR+12AEt02CVKMdTpWVNk0TeZ4as5SgM0R8NTIYZDnTMYL7bjjpOO8uJCDFVeCKebX1Kt7tEcQ4xhXgjH/dPJgw96DCmGuyz3MdQ1pc4nj632QRRi+HXWNNJNghvz4cPwO0Uhht9nTeMfhqp+PGCf0BBimBnC8a8/fRzNdpFKhmFuCDOoZcYwa9aUyXZFXIThrTfO0qbHeN1QL+/exKbHeN1QZc6a8tnMMV431GHWdPM9s3W07/Z1Q+XKgxXfS8RZqfcN84bcP4LW6zfvG2YOuX9EGwavk9HrhvqBEEYbNt82/LTWdIFVVuptwweuwp6l23/bUD/zHJfVbsa3Df3nmcJpltP0bcPwziNR9GJaGqUbU91LG1g9BeN9w2v3GiSR0x8+9AAQSWOap4Hhzfx6Q1eNzxdiKU1F6yFshn0ILdPjcPoUCU2GLGVOeVG2p4u5aZWK68Lw/Vkavswdt/jmFDiN7A9WNB5hSf3WhoPpFKXrd9tmCi63irA8sI3mb+f2F58xvDF/n6VIwytXCFW/2Y7zyZ6TJVv3pPpnxPGzW655Ere9a+tpqLAVp2D/BNOa1TG54+1JfMXW4JDhDeCM9r5kwL+k92d4/vNFBAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Y/wDpoY2HBKwqLIAAAAASUVORK5CYII=" style="width: 100%; height: 175px;">
+ 				<span class="font-weight500">Apply iPad (Latest Model) Wifi-Fi</span>
+ 				<h4>$300</h4>
+ 				<button class="add_card">Add to cart</button>
+ 			</div>
+
+ 		</div>
+ 	</div>
+	<div class="mt-2 mb-2">
+ 		<div class="">
+ 			<div class="d-flex space-between fs-15 mt-3">
+ 			<div>
+ 				<h4 class="fs-15"> <b>Groceries</b> </h4>
+ 			</div>
+ 			<div>
+ 				<a href="" style="color: black; font-weight: 600;">Shop All  <i class="fa fa-chevron-right"></i> </a>
+ 			</div>
+ 		</div>
+ 		</div>
+		<div class="row" style="    margin-left: -2px;">
+ 			<div class="col-lg-3 w20">
+ 				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEXt7e3V1dXW1tbm5ubs7Ozg4ODc3NzS0tLw8PDo6OjZ2dnj4+Pe3t5T9WAhAAAEmklEQVR4nO2ciXKsIBBFsQUB9f+/9+EuKjPEpe2X3FOVSTJlAmdaWRpUKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8Pbnh9mr4Uza+nnSpbChTTy0M/hNfKeNeXyIshW/BReaVZ4+h8zSY3lESG008rz+a30LIqFpbYDa1huxC1qovQDHAbUuG5DF3Tl8cmORdTs/Ua9VxuzUHXaA+WnsnQD90EUa1ZPlRtChoMuRobs5w0PLiGphJ5YlgNxVnGHrgeTlOuIkdD4imtx/B+qKNhzThOLF8xJE5D+4ohT2k9MLwZGD4ADG8Ghg8Aw5uB4QPINRxqdH14J9awmyG7summ5tfqJthQO1NY21wtUrKh7zJW9mqWTLLhcPDV9INYQ6XHqhXGXaqcXEM1L2/4S2k5qYbaNfP61LXEnFRDpWhJize/MIbrEAau1E6qoV75FfZKwlqmoVYmWiWmUp1ex5VpqKIQdhdkOG9/l2EcwuDYnu4UZRrq7frihSVOgYahKm2xUzw9eBNoqJy3O8Pi9CRDoqGqhv0+UQzpbKco0bAs9iEMVOeKlGeoVWpH0bnBmzxD5VMbbuhUJQUapkJI9tR5Ks+w+bBnqnRxXqr7razMx30d8gzTu4nI1nE1O8HWfkl0SDN0TXq7lKUwyYgqqrvDw9uftq1JM9RftoP57eF09PYaYYbOpNRG6vUIXLtqrH6bPk+FGX4LYdcpLripVSJbupSjMMNvISyiwZsu5sFdOlsly1Afa8Xn6Xzw9N96geTAXJShazMMi3I4WOsmejtlIMowbws4jRmbOOA2tV1dkGFoGbMMu9O0q24VZzpSSziCDKfttV8iSGOSv9wODRKjVkGGrs7Z/G0b1w/XdDy6Cz/b8rBIQYal3U7sj6j70WhoR+12AEt02CVKMdTpWVNk0TeZ4as5SgM0R8NTIYZDnTMYL7bjjpOO8uJCDFVeCKebX1Kt7tEcQ4xhXgjH/dPJgw96DCmGuyz3MdQ1pc4nj632QRRi+HXWNNJNghvz4cPwO0Uhht9nTeMfhqp+PGCf0BBimBnC8a8/fRzNdpFKhmFuCDOoZcYwa9aUyXZFXIThrTfO0qbHeN1QL+/exKbHeN1QZc6a8tnMMV431GHWdPM9s3W07/Z1Q+XKgxXfS8RZqfcN84bcP4LW6zfvG2YOuX9EGwavk9HrhvqBEEYbNt82/LTWdIFVVuptwweuwp6l23/bUD/zHJfVbsa3Df3nmcJpltP0bcPwziNR9GJaGqUbU91LG1g9BeN9w2v3GiSR0x8+9AAQSWOap4Hhzfx6Q1eNzxdiKU1F6yFshn0ILdPjcPoUCU2GLGVOeVG2p4u5aZWK68Lw/Vkavswdt/jmFDiN7A9WNB5hSf3WhoPpFKXrd9tmCi63irA8sI3mb+f2F58xvDF/n6VIwytXCFW/2Y7zyZ6TJVv3pPpnxPGzW655Ere9a+tpqLAVp2D/BNOa1TG54+1JfMXW4JDhDeCM9r5kwL+k92d4/vNFBAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Y/wDpoY2HBKwqLIAAAAASUVORK5CYII=" style="width: 100%; height: 175px;">
+ 				<span class="font-weight500">Apply iPad (Latest Model) Wifi-Fi</span>
+ 				<h4>$300</h4>
+ 				<button class="add_card">Add to cart</button>
+ 			</div>
+ 			<div class="col-lg-3 w20">
+ 				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEXt7e3V1dXW1tbm5ubs7Ozg4ODc3NzS0tLw8PDo6OjZ2dnj4+Pe3t5T9WAhAAAEmklEQVR4nO2ciXKsIBBFsQUB9f+/9+EuKjPEpe2X3FOVSTJlAmdaWRpUKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8Pbnh9mr4Uza+nnSpbChTTy0M/hNfKeNeXyIshW/BReaVZ4+h8zSY3lESG008rz+a30LIqFpbYDa1huxC1qovQDHAbUuG5DF3Tl8cmORdTs/Ua9VxuzUHXaA+WnsnQD90EUa1ZPlRtChoMuRobs5w0PLiGphJ5YlgNxVnGHrgeTlOuIkdD4imtx/B+qKNhzThOLF8xJE5D+4ohT2k9MLwZGD4ADG8Ghg8Aw5uB4QPINRxqdH14J9awmyG7summ5tfqJthQO1NY21wtUrKh7zJW9mqWTLLhcPDV9INYQ6XHqhXGXaqcXEM1L2/4S2k5qYbaNfP61LXEnFRDpWhJize/MIbrEAau1E6qoV75FfZKwlqmoVYmWiWmUp1ex5VpqKIQdhdkOG9/l2EcwuDYnu4UZRrq7frihSVOgYahKm2xUzw9eBNoqJy3O8Pi9CRDoqGqhv0+UQzpbKco0bAs9iEMVOeKlGeoVWpH0bnBmzxD5VMbbuhUJQUapkJI9tR5Ks+w+bBnqnRxXqr7razMx30d8gzTu4nI1nE1O8HWfkl0SDN0TXq7lKUwyYgqqrvDw9uftq1JM9RftoP57eF09PYaYYbOpNRG6vUIXLtqrH6bPk+FGX4LYdcpLripVSJbupSjMMNvISyiwZsu5sFdOlsly1Afa8Xn6Xzw9N96geTAXJShazMMi3I4WOsmejtlIMowbws4jRmbOOA2tV1dkGFoGbMMu9O0q24VZzpSSziCDKfttV8iSGOSv9wODRKjVkGGrs7Z/G0b1w/XdDy6Cz/b8rBIQYal3U7sj6j70WhoR+12AEt02CVKMdTpWVNk0TeZ4as5SgM0R8NTIYZDnTMYL7bjjpOO8uJCDFVeCKebX1Kt7tEcQ4xhXgjH/dPJgw96DCmGuyz3MdQ1pc4nj632QRRi+HXWNNJNghvz4cPwO0Uhht9nTeMfhqp+PGCf0BBimBnC8a8/fRzNdpFKhmFuCDOoZcYwa9aUyXZFXIThrTfO0qbHeN1QL+/exKbHeN1QZc6a8tnMMV431GHWdPM9s3W07/Z1Q+XKgxXfS8RZqfcN84bcP4LW6zfvG2YOuX9EGwavk9HrhvqBEEYbNt82/LTWdIFVVuptwweuwp6l23/bUD/zHJfVbsa3Df3nmcJpltP0bcPwziNR9GJaGqUbU91LG1g9BeN9w2v3GiSR0x8+9AAQSWOap4Hhzfx6Q1eNzxdiKU1F6yFshn0ILdPjcPoUCU2GLGVOeVG2p4u5aZWK68Lw/Vkavswdt/jmFDiN7A9WNB5hSf3WhoPpFKXrd9tmCi63irA8sI3mb+f2F58xvDF/n6VIwytXCFW/2Y7zyZ6TJVv3pPpnxPGzW655Ere9a+tpqLAVp2D/BNOa1TG54+1JfMXW4JDhDeCM9r5kwL+k92d4/vNFBAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Y/wDpoY2HBKwqLIAAAAASUVORK5CYII=" style="width: 100%; height: 175px;">
+ 				<span class="font-weight500">Apply iPad (Latest Model) Wifi-Fi</span>
+ 				<h4>$300</h4>
+ 				<button class="add_card">Add to cart</button>
+ 			</div>
+ 			<div class="col-lg-3 w20 ">
+ 				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEXt7e3V1dXW1tbm5ubs7Ozg4ODc3NzS0tLw8PDo6OjZ2dnj4+Pe3t5T9WAhAAAEmklEQVR4nO2ciXKsIBBFsQUB9f+/9+EuKjPEpe2X3FOVSTJlAmdaWRpUKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8Pbnh9mr4Uza+nnSpbChTTy0M/hNfKeNeXyIshW/BReaVZ4+h8zSY3lESG008rz+a30LIqFpbYDa1huxC1qovQDHAbUuG5DF3Tl8cmORdTs/Ua9VxuzUHXaA+WnsnQD90EUa1ZPlRtChoMuRobs5w0PLiGphJ5YlgNxVnGHrgeTlOuIkdD4imtx/B+qKNhzThOLF8xJE5D+4ohT2k9MLwZGD4ADG8Ghg8Aw5uB4QPINRxqdH14J9awmyG7summ5tfqJthQO1NY21wtUrKh7zJW9mqWTLLhcPDV9INYQ6XHqhXGXaqcXEM1L2/4S2k5qYbaNfP61LXEnFRDpWhJize/MIbrEAau1E6qoV75FfZKwlqmoVYmWiWmUp1ex5VpqKIQdhdkOG9/l2EcwuDYnu4UZRrq7frihSVOgYahKm2xUzw9eBNoqJy3O8Pi9CRDoqGqhv0+UQzpbKco0bAs9iEMVOeKlGeoVWpH0bnBmzxD5VMbbuhUJQUapkJI9tR5Ks+w+bBnqnRxXqr7razMx30d8gzTu4nI1nE1O8HWfkl0SDN0TXq7lKUwyYgqqrvDw9uftq1JM9RftoP57eF09PYaYYbOpNRG6vUIXLtqrH6bPk+FGX4LYdcpLripVSJbupSjMMNvISyiwZsu5sFdOlsly1Afa8Xn6Xzw9N96geTAXJShazMMi3I4WOsmejtlIMowbws4jRmbOOA2tV1dkGFoGbMMu9O0q24VZzpSSziCDKfttV8iSGOSv9wODRKjVkGGrs7Z/G0b1w/XdDy6Cz/b8rBIQYal3U7sj6j70WhoR+12AEt02CVKMdTpWVNk0TeZ4as5SgM0R8NTIYZDnTMYL7bjjpOO8uJCDFVeCKebX1Kt7tEcQ4xhXgjH/dPJgw96DCmGuyz3MdQ1pc4nj632QRRi+HXWNNJNghvz4cPwO0Uhht9nTeMfhqp+PGCf0BBimBnC8a8/fRzNdpFKhmFuCDOoZcYwa9aUyXZFXIThrTfO0qbHeN1QL+/exKbHeN1QZc6a8tnMMV431GHWdPM9s3W07/Z1Q+XKgxXfS8RZqfcN84bcP4LW6zfvG2YOuX9EGwavk9HrhvqBEEYbNt82/LTWdIFVVuptwweuwp6l23/bUD/zHJfVbsa3Df3nmcJpltP0bcPwziNR9GJaGqUbU91LG1g9BeN9w2v3GiSR0x8+9AAQSWOap4Hhzfx6Q1eNzxdiKU1F6yFshn0ILdPjcPoUCU2GLGVOeVG2p4u5aZWK68Lw/Vkavswdt/jmFDiN7A9WNB5hSf3WhoPpFKXrd9tmCi63irA8sI3mb+f2F58xvDF/n6VIwytXCFW/2Y7zyZ6TJVv3pPpnxPGzW655Ere9a+tpqLAVp2D/BNOa1TG54+1JfMXW4JDhDeCM9r5kwL+k92d4/vNFBAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Y/wDpoY2HBKwqLIAAAAASUVORK5CYII=" style="width: 100%; height: 175px;">
+ 				<span class="font-weight500">Apply iPad (Latest Model) Wifi-Fi</span>
+ 				<h4>$300</h4>
+ 				<button class="add_card">Add to cart</button>
+ 			</div>
+ 			<div class="col-lg-3 w20 ">
+ 				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEXt7e3V1dXW1tbm5ubs7Ozg4ODc3NzS0tLw8PDo6OjZ2dnj4+Pe3t5T9WAhAAAEmklEQVR4nO2ciXKsIBBFsQUB9f+/9+EuKjPEpe2X3FOVSTJlAmdaWRpUKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8Pbnh9mr4Uza+nnSpbChTTy0M/hNfKeNeXyIshW/BReaVZ4+h8zSY3lESG008rz+a30LIqFpbYDa1huxC1qovQDHAbUuG5DF3Tl8cmORdTs/Ua9VxuzUHXaA+WnsnQD90EUa1ZPlRtChoMuRobs5w0PLiGphJ5YlgNxVnGHrgeTlOuIkdD4imtx/B+qKNhzThOLF8xJE5D+4ohT2k9MLwZGD4ADG8Ghg8Aw5uB4QPINRxqdH14J9awmyG7summ5tfqJthQO1NY21wtUrKh7zJW9mqWTLLhcPDV9INYQ6XHqhXGXaqcXEM1L2/4S2k5qYbaNfP61LXEnFRDpWhJize/MIbrEAau1E6qoV75FfZKwlqmoVYmWiWmUp1ex5VpqKIQdhdkOG9/l2EcwuDYnu4UZRrq7frihSVOgYahKm2xUzw9eBNoqJy3O8Pi9CRDoqGqhv0+UQzpbKco0bAs9iEMVOeKlGeoVWpH0bnBmzxD5VMbbuhUJQUapkJI9tR5Ks+w+bBnqnRxXqr7razMx30d8gzTu4nI1nE1O8HWfkl0SDN0TXq7lKUwyYgqqrvDw9uftq1JM9RftoP57eF09PYaYYbOpNRG6vUIXLtqrH6bPk+FGX4LYdcpLripVSJbupSjMMNvISyiwZsu5sFdOlsly1Afa8Xn6Xzw9N96geTAXJShazMMi3I4WOsmejtlIMowbws4jRmbOOA2tV1dkGFoGbMMu9O0q24VZzpSSziCDKfttV8iSGOSv9wODRKjVkGGrs7Z/G0b1w/XdDy6Cz/b8rBIQYal3U7sj6j70WhoR+12AEt02CVKMdTpWVNk0TeZ4as5SgM0R8NTIYZDnTMYL7bjjpOO8uJCDFVeCKebX1Kt7tEcQ4xhXgjH/dPJgw96DCmGuyz3MdQ1pc4nj632QRRi+HXWNNJNghvz4cPwO0Uhht9nTeMfhqp+PGCf0BBimBnC8a8/fRzNdpFKhmFuCDOoZcYwa9aUyXZFXIThrTfO0qbHeN1QL+/exKbHeN1QZc6a8tnMMV431GHWdPM9s3W07/Z1Q+XKgxXfS8RZqfcN84bcP4LW6zfvG2YOuX9EGwavk9HrhvqBEEYbNt82/LTWdIFVVuptwweuwp6l23/bUD/zHJfVbsa3Df3nmcJpltP0bcPwziNR9GJaGqUbU91LG1g9BeN9w2v3GiSR0x8+9AAQSWOap4Hhzfx6Q1eNzxdiKU1F6yFshn0ILdPjcPoUCU2GLGVOeVG2p4u5aZWK68Lw/Vkavswdt/jmFDiN7A9WNB5hSf3WhoPpFKXrd9tmCi63irA8sI3mb+f2F58xvDF/n6VIwytXCFW/2Y7zyZ6TJVv3pPpnxPGzW655Ere9a+tpqLAVp2D/BNOa1TG54+1JfMXW4JDhDeCM9r5kwL+k92d4/vNFBAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Y/wDpoY2HBKwqLIAAAAASUVORK5CYII=" style="width: 100%; height: 175px;">
+ 				<span class="font-weight500">Apply iPad (Latest Model) Wifi-Fi</span>
+ 				<h4>$300</h4>
+ 				<button class="add_card">Add to cart</button>
+ 			</div>
+			<div class="col-lg-3 w20 ">
+ 				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEXt7e3V1dXW1tbm5ubs7Ozg4ODc3NzS0tLw8PDo6OjZ2dnj4+Pe3t5T9WAhAAAEmklEQVR4nO2ciXKsIBBFsQUB9f+/9+EuKjPEpe2X3FOVSTJlAmdaWRpUKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8Pbnh9mr4Uza+nnSpbChTTy0M/hNfKeNeXyIshW/BReaVZ4+h8zSY3lESG008rz+a30LIqFpbYDa1huxC1qovQDHAbUuG5DF3Tl8cmORdTs/Ua9VxuzUHXaA+WnsnQD90EUa1ZPlRtChoMuRobs5w0PLiGphJ5YlgNxVnGHrgeTlOuIkdD4imtx/B+qKNhzThOLF8xJE5D+4ohT2k9MLwZGD4ADG8Ghg8Aw5uB4QPINRxqdH14J9awmyG7summ5tfqJthQO1NY21wtUrKh7zJW9mqWTLLhcPDV9INYQ6XHqhXGXaqcXEM1L2/4S2k5qYbaNfP61LXEnFRDpWhJize/MIbrEAau1E6qoV75FfZKwlqmoVYmWiWmUp1ex5VpqKIQdhdkOG9/l2EcwuDYnu4UZRrq7frihSVOgYahKm2xUzw9eBNoqJy3O8Pi9CRDoqGqhv0+UQzpbKco0bAs9iEMVOeKlGeoVWpH0bnBmzxD5VMbbuhUJQUapkJI9tR5Ks+w+bBnqnRxXqr7razMx30d8gzTu4nI1nE1O8HWfkl0SDN0TXq7lKUwyYgqqrvDw9uftq1JM9RftoP57eF09PYaYYbOpNRG6vUIXLtqrH6bPk+FGX4LYdcpLripVSJbupSjMMNvISyiwZsu5sFdOlsly1Afa8Xn6Xzw9N96geTAXJShazMMi3I4WOsmejtlIMowbws4jRmbOOA2tV1dkGFoGbMMu9O0q24VZzpSSziCDKfttV8iSGOSv9wODRKjVkGGrs7Z/G0b1w/XdDy6Cz/b8rBIQYal3U7sj6j70WhoR+12AEt02CVKMdTpWVNk0TeZ4as5SgM0R8NTIYZDnTMYL7bjjpOO8uJCDFVeCKebX1Kt7tEcQ4xhXgjH/dPJgw96DCmGuyz3MdQ1pc4nj632QRRi+HXWNNJNghvz4cPwO0Uhht9nTeMfhqp+PGCf0BBimBnC8a8/fRzNdpFKhmFuCDOoZcYwa9aUyXZFXIThrTfO0qbHeN1QL+/exKbHeN1QZc6a8tnMMV431GHWdPM9s3W07/Z1Q+XKgxXfS8RZqfcN84bcP4LW6zfvG2YOuX9EGwavk9HrhvqBEEYbNt82/LTWdIFVVuptwweuwp6l23/bUD/zHJfVbsa3Df3nmcJpltP0bcPwziNR9GJaGqUbU91LG1g9BeN9w2v3GiSR0x8+9AAQSWOap4Hhzfx6Q1eNzxdiKU1F6yFshn0ILdPjcPoUCU2GLGVOeVG2p4u5aZWK68Lw/Vkavswdt/jmFDiN7A9WNB5hSf3WhoPpFKXrd9tmCi63irA8sI3mb+f2F58xvDF/n6VIwytXCFW/2Y7zyZ6TJVv3pPpnxPGzW655Ere9a+tpqLAVp2D/BNOa1TG54+1JfMXW4JDhDeCM9r5kwL+k92d4/vNFBAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Y/wDpoY2HBKwqLIAAAAASUVORK5CYII=" style="width: 100%; height: 175px;">
+ 				<span class="font-weight500">Apply iPad (Latest Model) Wifi-Fi</span>
+ 				<h4>$300</h4>
+ 				<button class="add_card">Add to cart</button>
+ 			</div>
+
+ 		</div>
+ 	</div>
+ 	<div class="mt-2 mb-2">
+ 		<div class="container_link">
+		  <img src="https://png.pngtree.com/thumb_back/fh260/back_pic/02/50/63/71577e1cf59d802.jpg" alt="Snow" style="width:100%; height: 200px;">
+		  <div class="centered">
+		  	<h4>Finds for family time</h4>
+		  	<span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, </span>
+		  </div>
+		</div>
+ 	</div>
+
+ 	<div class="footer">
+ 		<div class="row" style="    margin-left: -2px;">
+ 			<div class="col-lg-3 ">
+ 				<div>
+ 					<h6>Get to Know Us</h6>
+ 					<ul>
+ 						<li>
+ 							<a href="">Our Company</a>
+ 						</li>
+ 						<li>
+ 							<a href="">Career</a>
+ 						</li>
+ 						<li>
+ 							<a href="">Blog</a>
+ 						</li>
+ 					</ul>
+ 				</div>
+ 			</div>
+ 			<div class="col-lg-3 ">
+ 				<div>
+ 					<h6>Spree Business</h6>
+ 					<ul>
+ 						<li>
+ 							<a href="">Sell on Spree</a>
+ 						</li>
+ 						<li>
+ 							<a href="">Advertise With Us</a>
+ 						</li>
+ 					</ul>
+ 				</div>
+ 			</div>
+ 			<div class="col-lg-3 ">
+ 				<div>
+ 					<h6>Customer Service</h6>
+ 					<ul>
+ 						<li>
+ 							<a href="">Contact Us </a>
+ 						</li>
+ 						<li>
+ 							<a href="">FAQ</a>
+ 						</li>
+ 					</ul>
+ 				</div>
+ 			</div>
+ 			<div class="col-lg-3  ">
+<h6>Social</h6>
+				<div class="d-flex">
+					<div style="width: 24px;">
+<i class="fa fa-instagram" aria-hidden="true"></i>
+
+					</div>
+					<div style="width: 24px;">
+<i class="fa fa-twitter" aria-hidden="true"></i>
+					</div>
+
+				</div>
+ 			</div>
+
+ 		</div>
+ 	</div>
+</article>
+<!-- /.navbar -->
+</body>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/popper.min"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		(function($) { // Begin jQuery
+  $(function() { // DOM ready
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      // Close one dropdown when selecting another
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    // Clicking away from dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    // Toggle open and close nav styles on click
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    // Hamburger to X toggle
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); // end DOM ready
+})(jQuery); // end jQuery
+	</script>
+</html>
