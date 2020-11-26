@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spree</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css"> -->
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style media="screen">
+	article .row .col-lg-3 img{
+		height: 193px !important;
+		/* margin-left: -21px; */
+		/* background: lightgray; */
+
+	}
+	html,body {
+height: 100%;
+}
+
+.global-container{
+height:100%;
+display: flex;
+align-items: center;
+justify-content: center;
+/* background-color: #f5f5f5; */
+}
+
+form{
+padding-top: 10px;
+font-size: 14px;
+margin-top: 30px;
+}
+
+.card-title{ font-weight:300; }
+
+.btn{
+font-size: 14px;
+margin-top:20px;
+}
+
+
+.login-form{
+width:400px;
+margin:20px;
+}
+
+.sign-up{
+text-align:center;
+padding:20px 0 0;
+}
+
+.alert{
+margin-bottom:-30px;
+font-size: 13px;
+margin-top:20px;
+}
+.form-control {
+padding: 8px 16px !important;
+}
+.btn-primary{
+border-radius: 50px;
+
+}
+.btn-create{
+background-color: transparent;
+color: black;
+border: 1px solid black;
+border-radius: 50px;
+}
+.card{
+border: none;
+}
+*:focus{
+outline: none;
+}
+input:focus{
+	outline: none;
+}
+.check_out_btn{
+	color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+		width: 100%;
+		padding: 8px;
+		border: none;
+}
+.form-group{
+	margin-top: 6px;
+}
+.num_1{
+	border-radius: 50px;
+color: black;
+padding: 1px 8px;
+border: 1px solid black;
+margin-right: 10px;
+
+}
+.card-header{
+	background-color: transparent;
+
+}
+a{
+	color: black;
+
+}
+.delivery:after{
+	content: "";
+position: absolute;
+top: 111px;
+left: 101px;
+z-index: 999999;
+border-top: 6px solid #333;
+border-right: 6px solid transparent;
+border-bottom: 6px solid transparent;
+border-left: 6px solid transparent;
+}
+.delivery {
+    border: 1px solid black;
+    padding: 8px;
+    width: 180px;
+    text-align: center;
+		margin-right: 8px;
+}
+.pickup_free {
+    border: 1px solid black;
+    padding: 8px;
+    width: 180px;
+    text-align: center;
+}
+.btn_continue{
+	color: #fff;
+background-color: #0069d9;
+border-color: #0062cc;
+border-radius: 50px;
+padding: 6px 35px;
+}
+.boder_div{
+	background: white;
+box-shadow: 0px 1px 6px lightgrey;
+padding: 17px;
+}
+.add_card{
+	color: #0066c0;
+	background-color: transparent;
+	border: 1px solid #0066c0;
+	padding: 5px;
+	width: 161px;
+	border-radius: 0;
+}
+.fa-star{
+	color: #efa807;
+display: none;
+}
+.w5{
+	width: 5%;
+}
+.w78{
+	width: 78%;
+
+}
+
+
+/* CSS used here will be applied after bootstrap.css */
+#carousel {
+    margin-top: 0px;
+}
+.item .thumb {
+	width: 25%;
+	cursor: pointer;
+	float: left;
+}
+.item .thumb img, .item img {
+	width: 100%;
+}
+.check_out{
+	    width: 100%;
+    border: none;
+    background-color: #ffc600;
+    font-weight: 600;
+    border-radius: 3px;
+        padding: 10px;
+
+}
+.paypal_chck{
+	    width: 100%;
+    border: none;
+    /*background-color: #ffc600;*/
+    font-weight: 600;
+    border-radius: 3px;
+    font-size: 15px;
+        margin-top: 13px;
+}
+body{
+	/*background-color: rgb(239, 239, 239);*/
+}
+.bg-white{
+	padding: 15px;
+    margin: 24px 0px;
+}
+</style>
+
+</head>
+<body>
+	<!-- .navbar -->
+<section class="navigation">
+  <div class="nav-container">
+    <div class="brand">
+      <a href="#!" style="    text-transform: capitalize;">Spree</a>
+    </div>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <a href="#!">fashion</a>
+        </li>
+        <li>
+          <a href="#!">Health & beauty</a>
+        </li>
+        <li>
+          <a href="#!">Electronics</a>
+          <!-- <ul class="nav-dropdown">
+            <li>
+              <a href="#!">Web Design</a>
+            </li>
+            <li>
+              <a href="#!">Web Development</a>
+            </li>
+            <li>
+              <a href="#!">Graphic Design</a>
+            </li>
+          </ul> -->
+        </li>
+        <li>
+          <a href="#!">Groceries</a>
+        </li>
+				<li>
+					<a href="#" style="    text-transform: capitalize;">
+						<div class="">
+							<div class="form-group has-search">
+						    <input type="text" class="form-control" placeholder="Search">
+								<span class="fa fa-search form-control-feedback"></span>
+
+						  </div>
+						</div>
+					</a>
+				</li>
+
+<li class="border_ccc">
+  <a href="" style="    text-transform: capitalize;">
+	Account <span> <i class="fa fa-user"></i>
+</a>
+</li>
+<li>
+  <a href="" style="    text-transform: capitalize;">
+	Cart <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+</a>
+</li>
+      </ul>
+    </nav>
+
+  </div>
+</section>
+<article>
+	<div class="col-sm-12" style="margin-bottom: 64px;
+    margin-top: 66px;">
+
+		<div class="row">
+			<div class="col-sm-8 col-lg-8 col-md-8">
+				<div class="">
+						<h3>Your Cart</h3>
+						<div class="bg-white p-6">
+							<div class="row">
+								<div class="col-sm-5 col-md-5">
+									<div class="d-flex">
+										<div>
+											<img src="https://cdn.mos.cms.futurecdn.net/mg5xzBw7tDooHnde4DZkCE-1200-80.jpg" width="100px" alt="">
+										</div>
+										<div class="">
+											<a href="#" style=" color: #0066c0;">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4 col-md-4">
+									<div class="">
+										<div class="">
+											<div class="">
+												<input type="radio" name="" value="">
+												<b>Pickup at</b> <span style=" color: #0066c0;">Walker</span>
+											</div>
+											<div class="">
+												<span>Ready for pickup</span> <span> <b>Web, Dec 2</b> </span>
+											</div>
+											<div class="">
+												<span style=" color: #0066c0;">Available Today at a store 10 miles away</span>
+											</div>
+											<div class="">
+												Your order will be brought out to your car using Best Buy Curbside Pickup.
+											</div>
+										</div>
+										<div class="" style="margin-top: 12px;">
+											<div class="">
+												<input type="radio" name="" value="">
+												<span>FREE Shipping</span> <span style=" color: #0066c0;">49534</span>
+											</div>
+											<div class="">
+												<span>Get it by </span> <span> <b>Web, Dec 2</b> if you order within 10hr 27min
+													<br> Faster shipping options aew also available in checkout
+												</span>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<div class="col-sm-3 col-md-3">
+									<div class="d-flex">
+										<div class="">
+											<div class="">
+												<select class="" name="">
+													<option value="">1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+												</select>
+											</div>
+											<div class="">
+												<span style=" color: #0066c0;">Remove</span> <br>
+												<span style=" color: #0066c0;">Save</span>
+											</div>
+										</div>
+										<div class="">
+											<b>$300.00</b>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-2">
+
+								</div>
+								<div class="col-sm-10">
+									<div class="d-flex" style="    align-items: center;">
+										<div class="" style="    width: 20%;">
+											<b>Protection Plans</b>
+										</div>
+										<div class="" style="    width: 80%;">
+											<hr>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-2">
+
+								</div>
+								<div class="col-sm-10">
+									<div class="row">
+										<div class="col-sm-9">
+											<div class="d-flex">
+												<div class="w5">
+													<span><i class="fa fa-shield" aria-hidden="true"></i></span>
+												</div>
+												<div class="w78">
+													<div class="" style=" color: #0066c0;">
+														2-years Accidental Geek Squad Product Replacement
+													</div>
+													<div class="">
+														<i class="fa fa-star" aria-hidden="true"></i>
+														<i class="fa fa-star" aria-hidden="true"></i>
+														<i class="fa fa-star" aria-hidden="true"></i>
+														<i class="fa fa-star" aria-hidden="true"></i>
+														<i class="fa fa-star" aria-hidden="true"></i>
+														<!-- <span style=" color: #0066c0;"> <b>4.7</b> (121)</span> -->
+													</div>
+												</div>
+												<div class="">
+													<b>$79.99</b>
+												</div>
+											</div>
+										</div>
+										<div class="">
+											<button type="button" name="button" class="add_card">Add to Cart</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bg-white">
+							<section class=" circle-1">
+
+								<h5>People also bought <span style="font-weight: 400;
+    						font-size: 15px;"		>(16 items)</span> </h5>
+								<div class="container pb-5 position-relative">
+												<div id="demo" class="carousel slide position-relative" data-ride="carousel">
+
+														<!-- Indicators -->
+																<ul class="carousel-indicators">
+																		<li data-target="#demo" data-slide-to="0" class=""></li>
+																		<li data-target="#demo" data-slide-to="1" class="active"></li>
+																		<li data-target="#demo" data-slide-to="2" class=""></li>
+																	  </ul>
+
+
+														<!-- The slideshow -->
+														<div class="carousel-inner">
+														  <div class="carousel-item active carousel-item-left">
+																<div class="d-flex">
+																		<div class="col-lg-4 col-sm-12 col-12 d-flex flex-column ">
+																				<!-- <a href="#" class="introduce pb-3"> -->
+																				<div class="flex-column-1 ">
+																					<div class="">
+																						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEXt7e3V1dXW1tbm5ubs7Ozg4ODc3NzS0tLw8PDo6OjZ2dnj4+Pe3t5T9WAhAAAEmklEQVR4nO2ciXKsIBBFsQUB9f+/9+EuKjPEpe2X3FOVSTJlAmdaWRpUKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8Pbnh9mr4Uza+nnSpbChTTy0M/hNfKeNeXyIshW/BReaVZ4+h8zSY3lESG008rz+a30LIqFpbYDa1huxC1qovQDHAbUuG5DF3Tl8cmORdTs/Ua9VxuzUHXaA+WnsnQD90EUa1ZPlRtChoMuRobs5w0PLiGphJ5YlgNxVnGHrgeTlOuIkdD4imtx/B+qKNhzThOLF8xJE5D+4ohT2k9MLwZGD4ADG8Ghg8Aw5uB4QPINRxqdH14J9awmyG7summ5tfqJthQO1NY21wtUrKh7zJW9mqWTLLhcPDV9INYQ6XHqhXGXaqcXEM1L2/4S2k5qYbaNfP61LXEnFRDpWhJize/MIbrEAau1E6qoV75FfZKwlqmoVYmWiWmUp1ex5VpqKIQdhdkOG9/l2EcwuDYnu4UZRrq7frihSVOgYahKm2xUzw9eBNoqJy3O8Pi9CRDoqGqhv0+UQzpbKco0bAs9iEMVOeKlGeoVWpH0bnBmzxD5VMbbuhUJQUapkJI9tR5Ks+w+bBnqnRxXqr7razMx30d8gzTu4nI1nE1O8HWfkl0SDN0TXq7lKUwyYgqqrvDw9uftq1JM9RftoP57eF09PYaYYbOpNRG6vUIXLtqrH6bPk+FGX4LYdcpLripVSJbupSjMMNvISyiwZsu5sFdOlsly1Afa8Xn6Xzw9N96geTAXJShazMMi3I4WOsmejtlIMowbws4jRmbOOA2tV1dkGFoGbMMu9O0q24VZzpSSziCDKfttV8iSGOSv9wODRKjVkGGrs7Z/G0b1w/XdDy6Cz/b8rBIQYal3U7sj6j70WhoR+12AEt02CVKMdTpWVNk0TeZ4as5SgM0R8NTIYZDnTMYL7bjjpOO8uJCDFVeCKebX1Kt7tEcQ4xhXgjH/dPJgw96DCmGuyz3MdQ1pc4nj632QRRi+HXWNNJNghvz4cPwO0Uhht9nTeMfhqp+PGCf0BBimBnC8a8/fRzNdpFKhmFuCDOoZcYwa9aUyXZFXIThrTfO0qbHeN1QL+/exKbHeN1QZc6a8tnMMV431GHWdPM9s3W07/Z1Q+XKgxXfS8RZqfcN84bcP4LW6zfvG2YOuX9EGwavk9HrhvqBEEYbNt82/LTWdIFVVuptwweuwp6l23/bUD/zHJfVbsa3Df3nmcJpltP0bcPwziNR9GJaGqUbU91LG1g9BeN9w2v3GiSR0x8+9AAQSWOap4Hhzfx6Q1eNzxdiKU1F6yFshn0ILdPjcPoUCU2GLGVOeVG2p4u5aZWK68Lw/Vkavswdt/jmFDiN7A9WNB5hSf3WhoPpFKXrd9tmCi63irA8sI3mb+f2F58xvDF/n6VIwytXCFW/2Y7zyZ6TJVv3pPpnxPGzW655Ere9a+tpqLAVp2D/BNOa1TG54+1JfMXW4JDhDeCM9r5kwL+k92d4/vNFBAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Y/wDpoY2HBKwqLIAAAAASUVORK5CYII=" style="width: 100%; height: 175px;">
+																		 				<span class="font-weight500" alt="">
+																					</div>
+																					<p class="pr-2 pl-3 pt-4" style="color: #0066c0;">
+																						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+																					</p>
+																				</div>
+																				<div class="flex-column-2 d-flex">
+																					<div class="pic p1"></div>
+																					<div class="information  flex-column pl-3 pt-2">
+																						
+																						<p class="text-gray"> <b>$300</b> </p>
+																						<button type="button" name="button" class="add_card">
+																							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+																							Add to Cart
+																						</button>
+																					</div>
+																				</div>
+																				<span></span>
+																			<!-- </a> -->
+																		</div>
+																		<div class="col-lg-4 col-sm-12 col-12 d-flex flex-column ">
+																				<!-- <a href="#" class="introduce pb-3"> -->
+																				<div class="flex-column-1 ">
+																					<div class="">
+																						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEXt7e3V1dXW1tbm5ubs7Ozg4ODc3NzS0tLw8PDo6OjZ2dnj4+Pe3t5T9WAhAAAEmklEQVR4nO2ciXKsIBBFsQUB9f+/9+EuKjPEpe2X3FOVSTJlAmdaWRpUKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8Pbnh9mr4Uza+nnSpbChTTy0M/hNfKeNeXyIshW/BReaVZ4+h8zSY3lESG008rz+a30LIqFpbYDa1huxC1qovQDHAbUuG5DF3Tl8cmORdTs/Ua9VxuzUHXaA+WnsnQD90EUa1ZPlRtChoMuRobs5w0PLiGphJ5YlgNxVnGHrgeTlOuIkdD4imtx/B+qKNhzThOLF8xJE5D+4ohT2k9MLwZGD4ADG8Ghg8Aw5uB4QPINRxqdH14J9awmyG7summ5tfqJthQO1NY21wtUrKh7zJW9mqWTLLhcPDV9INYQ6XHqhXGXaqcXEM1L2/4S2k5qYbaNfP61LXEnFRDpWhJize/MIbrEAau1E6qoV75FfZKwlqmoVYmWiWmUp1ex5VpqKIQdhdkOG9/l2EcwuDYnu4UZRrq7frihSVOgYahKm2xUzw9eBNoqJy3O8Pi9CRDoqGqhv0+UQzpbKco0bAs9iEMVOeKlGeoVWpH0bnBmzxD5VMbbuhUJQUapkJI9tR5Ks+w+bBnqnRxXqr7razMx30d8gzTu4nI1nE1O8HWfkl0SDN0TXq7lKUwyYgqqrvDw9uftq1JM9RftoP57eF09PYaYYbOpNRG6vUIXLtqrH6bPk+FGX4LYdcpLripVSJbupSjMMNvISyiwZsu5sFdOlsly1Afa8Xn6Xzw9N96geTAXJShazMMi3I4WOsmejtlIMowbws4jRmbOOA2tV1dkGFoGbMMu9O0q24VZzpSSziCDKfttV8iSGOSv9wODRKjVkGGrs7Z/G0b1w/XdDy6Cz/b8rBIQYal3U7sj6j70WhoR+12AEt02CVKMdTpWVNk0TeZ4as5SgM0R8NTIYZDnTMYL7bjjpOO8uJCDFVeCKebX1Kt7tEcQ4xhXgjH/dPJgw96DCmGuyz3MdQ1pc4nj632QRRi+HXWNNJNghvz4cPwO0Uhht9nTeMfhqp+PGCf0BBimBnC8a8/fRzNdpFKhmFuCDOoZcYwa9aUyXZFXIThrTfO0qbHeN1QL+/exKbHeN1QZc6a8tnMMV431GHWdPM9s3W07/Z1Q+XKgxXfS8RZqfcN84bcP4LW6zfvG2YOuX9EGwavk9HrhvqBEEYbNt82/LTWdIFVVuptwweuwp6l23/bUD/zHJfVbsa3Df3nmcJpltP0bcPwziNR9GJaGqUbU91LG1g9BeN9w2v3GiSR0x8+9AAQSWOap4Hhzfx6Q1eNzxdiKU1F6yFshn0ILdPjcPoUCU2GLGVOeVG2p4u5aZWK68Lw/Vkavswdt/jmFDiN7A9WNB5hSf3WhoPpFKXrd9tmCi63irA8sI3mb+f2F58xvDF/n6VIwytXCFW/2Y7zyZ6TJVv3pPpnxPGzW655Ere9a+tpqLAVp2D/BNOa1TG54+1JfMXW4JDhDeCM9r5kwL+k92d4/vNFBAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Y/wDpoY2HBKwqLIAAAAASUVORK5CYII=" style="width: 100%; height: 175px;">
+																		 				<span class="font-weight500" alt="">
+																					</div>
+																					<p class="pr-2 pl-3 pt-4" style="color: #0066c0;">
+																						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+																					</p>
+																				</div>
+																				<div class="flex-column-2 d-flex">
+																					<div class="pic p1"></div>
+																					<div class="information  flex-column pl-3 pt-2">
+																						
+																						<p class="text-gray"> <b>$300</b> </p>
+																						<button type="button" name="button" class="add_card">
+																							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+																							Add to Cart
+																						</button>
+																					</div>
+																				</div>
+																				<span></span>
+																			<!-- </a> -->
+																		</div>
+																		<div class="col-lg-4 col-sm-12 col-12 d-flex flex-column ">
+																				<!-- <a href="#" class="introduce pb-3"> -->
+																				<div class="flex-column-1 ">
+																					<div class="">
+																						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEXt7e3V1dXW1tbm5ubs7Ozg4ODc3NzS0tLw8PDo6OjZ2dnj4+Pe3t5T9WAhAAAEmklEQVR4nO2ciXKsIBBFsQUB9f+/9+EuKjPEpe2X3FOVSTJlAmdaWRpUKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8Pbnh9mr4Uza+nnSpbChTTy0M/hNfKeNeXyIshW/BReaVZ4+h8zSY3lESG008rz+a30LIqFpbYDa1huxC1qovQDHAbUuG5DF3Tl8cmORdTs/Ua9VxuzUHXaA+WnsnQD90EUa1ZPlRtChoMuRobs5w0PLiGphJ5YlgNxVnGHrgeTlOuIkdD4imtx/B+qKNhzThOLF8xJE5D+4ohT2k9MLwZGD4ADG8Ghg8Aw5uB4QPINRxqdH14J9awmyG7summ5tfqJthQO1NY21wtUrKh7zJW9mqWTLLhcPDV9INYQ6XHqhXGXaqcXEM1L2/4S2k5qYbaNfP61LXEnFRDpWhJize/MIbrEAau1E6qoV75FfZKwlqmoVYmWiWmUp1ex5VpqKIQdhdkOG9/l2EcwuDYnu4UZRrq7frihSVOgYahKm2xUzw9eBNoqJy3O8Pi9CRDoqGqhv0+UQzpbKco0bAs9iEMVOeKlGeoVWpH0bnBmzxD5VMbbuhUJQUapkJI9tR5Ks+w+bBnqnRxXqr7razMx30d8gzTu4nI1nE1O8HWfkl0SDN0TXq7lKUwyYgqqrvDw9uftq1JM9RftoP57eF09PYaYYbOpNRG6vUIXLtqrH6bPk+FGX4LYdcpLripVSJbupSjMMNvISyiwZsu5sFdOlsly1Afa8Xn6Xzw9N96geTAXJShazMMi3I4WOsmejtlIMowbws4jRmbOOA2tV1dkGFoGbMMu9O0q24VZzpSSziCDKfttV8iSGOSv9wODRKjVkGGrs7Z/G0b1w/XdDy6Cz/b8rBIQYal3U7sj6j70WhoR+12AEt02CVKMdTpWVNk0TeZ4as5SgM0R8NTIYZDnTMYL7bjjpOO8uJCDFVeCKebX1Kt7tEcQ4xhXgjH/dPJgw96DCmGuyz3MdQ1pc4nj632QRRi+HXWNNJNghvz4cPwO0Uhht9nTeMfhqp+PGCf0BBimBnC8a8/fRzNdpFKhmFuCDOoZcYwa9aUyXZFXIThrTfO0qbHeN1QL+/exKbHeN1QZc6a8tnMMV431GHWdPM9s3W07/Z1Q+XKgxXfS8RZqfcN84bcP4LW6zfvG2YOuX9EGwavk9HrhvqBEEYbNt82/LTWdIFVVuptwweuwp6l23/bUD/zHJfVbsa3Df3nmcJpltP0bcPwziNR9GJaGqUbU91LG1g9BeN9w2v3GiSR0x8+9AAQSWOap4Hhzfx6Q1eNzxdiKU1F6yFshn0ILdPjcPoUCU2GLGVOeVG2p4u5aZWK68Lw/Vkavswdt/jmFDiN7A9WNB5hSf3WhoPpFKXrd9tmCi63irA8sI3mb+f2F58xvDF/n6VIwytXCFW/2Y7zyZ6TJVv3pPpnxPGzW655Ere9a+tpqLAVp2D/BNOa1TG54+1JfMXW4JDhDeCM9r5kwL+k92d4/vNFBAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Y/wDpoY2HBKwqLIAAAAASUVORK5CYII=" style="width: 100%; height: 175px;">
+																		 				<span class="font-weight500" alt="">
+																					</div>
+																					<p class="pr-2 pl-3 pt-4" style="color: #0066c0;">
+																						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+																					</p>
+																				</div>
+																				<div class="flex-column-2 d-flex">
+																					<div class="pic p1"></div>
+																					<div class="information  flex-column pl-3 pt-2">
+																						
+																						<p class="text-gray"> <b>$300</b> </p>
+																						<button type="button" name="button" class="add_card">
+																							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+																							Add to Cart
+																						</button>
+																					</div>
+																				</div>
+																				<span></span>
+																			<!-- </a> -->
+																		</div>
+																</div>
+
+															</div>
+															<div class="carousel-item carousel-item-next carousel-item-left">
+																	<div class="d-flex">
+																		<div class="col-lg-4 col-sm-12 col-12 d-flex flex-column ">
+																				<!-- <a href="#" class="introduce pb-3"> -->
+																				<div class="flex-column-1 ">
+																					<div class="">
+																						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEXt7e3V1dXW1tbm5ubs7Ozg4ODc3NzS0tLw8PDo6OjZ2dnj4+Pe3t5T9WAhAAAEmklEQVR4nO2ciXKsIBBFsQUB9f+/9+EuKjPEpe2X3FOVSTJlAmdaWRpUKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8Pbnh9mr4Uza+nnSpbChTTy0M/hNfKeNeXyIshW/BReaVZ4+h8zSY3lESG008rz+a30LIqFpbYDa1huxC1qovQDHAbUuG5DF3Tl8cmORdTs/Ua9VxuzUHXaA+WnsnQD90EUa1ZPlRtChoMuRobs5w0PLiGphJ5YlgNxVnGHrgeTlOuIkdD4imtx/B+qKNhzThOLF8xJE5D+4ohT2k9MLwZGD4ADG8Ghg8Aw5uB4QPINRxqdH14J9awmyG7summ5tfqJthQO1NY21wtUrKh7zJW9mqWTLLhcPDV9INYQ6XHqhXGXaqcXEM1L2/4S2k5qYbaNfP61LXEnFRDpWhJize/MIbrEAau1E6qoV75FfZKwlqmoVYmWiWmUp1ex5VpqKIQdhdkOG9/l2EcwuDYnu4UZRrq7frihSVOgYahKm2xUzw9eBNoqJy3O8Pi9CRDoqGqhv0+UQzpbKco0bAs9iEMVOeKlGeoVWpH0bnBmzxD5VMbbuhUJQUapkJI9tR5Ks+w+bBnqnRxXqr7razMx30d8gzTu4nI1nE1O8HWfkl0SDN0TXq7lKUwyYgqqrvDw9uftq1JM9RftoP57eF09PYaYYbOpNRG6vUIXLtqrH6bPk+FGX4LYdcpLripVSJbupSjMMNvISyiwZsu5sFdOlsly1Afa8Xn6Xzw9N96geTAXJShazMMi3I4WOsmejtlIMowbws4jRmbOOA2tV1dkGFoGbMMu9O0q24VZzpSSziCDKfttV8iSGOSv9wODRKjVkGGrs7Z/G0b1w/XdDy6Cz/b8rBIQYal3U7sj6j70WhoR+12AEt02CVKMdTpWVNk0TeZ4as5SgM0R8NTIYZDnTMYL7bjjpOO8uJCDFVeCKebX1Kt7tEcQ4xhXgjH/dPJgw96DCmGuyz3MdQ1pc4nj632QRRi+HXWNNJNghvz4cPwO0Uhht9nTeMfhqp+PGCf0BBimBnC8a8/fRzNdpFKhmFuCDOoZcYwa9aUyXZFXIThrTfO0qbHeN1QL+/exKbHeN1QZc6a8tnMMV431GHWdPM9s3W07/Z1Q+XKgxXfS8RZqfcN84bcP4LW6zfvG2YOuX9EGwavk9HrhvqBEEYbNt82/LTWdIFVVuptwweuwp6l23/bUD/zHJfVbsa3Df3nmcJpltP0bcPwziNR9GJaGqUbU91LG1g9BeN9w2v3GiSR0x8+9AAQSWOap4Hhzfx6Q1eNzxdiKU1F6yFshn0ILdPjcPoUCU2GLGVOeVG2p4u5aZWK68Lw/Vkavswdt/jmFDiN7A9WNB5hSf3WhoPpFKXrd9tmCi63irA8sI3mb+f2F58xvDF/n6VIwytXCFW/2Y7zyZ6TJVv3pPpnxPGzW655Ere9a+tpqLAVp2D/BNOa1TG54+1JfMXW4JDhDeCM9r5kwL+k92d4/vNFBAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Y/wDpoY2HBKwqLIAAAAASUVORK5CYII=" style="width: 100%; height: 175px;">
+																						<span class="font-weight500" alt="">
+																					</div>
+																					<p class="pr-2 pl-3 pt-4" style="color: #0066c0;">
+																						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+																					</p>
+																				</div>
+																				<div class="flex-column-2 d-flex">
+																					<div class="pic p1"></div>
+																					<div class="information  flex-column pl-3 pt-2">
+																						
+																						<p class="text-gray"> <b>$300</b> </p>
+																						<button type="button" name="button" class="add_card">
+																							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+																							Add to Cart
+																						</button>
+																					</div>
+																				</div>
+																				<span></span>
+																			<!-- </a> -->
+																		</div>
+																		<div class="col-lg-4 col-sm-12 col-12 d-flex flex-column ">
+																				<!-- <a href="#" class="introduce pb-3"> -->
+																				<div class="flex-column-1 ">
+																					<div class="">
+																						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEXt7e3V1dXW1tbm5ubs7Ozg4ODc3NzS0tLw8PDo6OjZ2dnj4+Pe3t5T9WAhAAAEmklEQVR4nO2ciXKsIBBFsQUB9f+/9+EuKjPEpe2X3FOVSTJlAmdaWRpUKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8Pbnh9mr4Uza+nnSpbChTTy0M/hNfKeNeXyIshW/BReaVZ4+h8zSY3lESG008rz+a30LIqFpbYDa1huxC1qovQDHAbUuG5DF3Tl8cmORdTs/Ua9VxuzUHXaA+WnsnQD90EUa1ZPlRtChoMuRobs5w0PLiGphJ5YlgNxVnGHrgeTlOuIkdD4imtx/B+qKNhzThOLF8xJE5D+4ohT2k9MLwZGD4ADG8Ghg8Aw5uB4QPINRxqdH14J9awmyG7summ5tfqJthQO1NY21wtUrKh7zJW9mqWTLLhcPDV9INYQ6XHqhXGXaqcXEM1L2/4S2k5qYbaNfP61LXEnFRDpWhJize/MIbrEAau1E6qoV75FfZKwlqmoVYmWiWmUp1ex5VpqKIQdhdkOG9/l2EcwuDYnu4UZRrq7frihSVOgYahKm2xUzw9eBNoqJy3O8Pi9CRDoqGqhv0+UQzpbKco0bAs9iEMVOeKlGeoVWpH0bnBmzxD5VMbbuhUJQUapkJI9tR5Ks+w+bBnqnRxXqr7razMx30d8gzTu4nI1nE1O8HWfkl0SDN0TXq7lKUwyYgqqrvDw9uftq1JM9RftoP57eF09PYaYYbOpNRG6vUIXLtqrH6bPk+FGX4LYdcpLripVSJbupSjMMNvISyiwZsu5sFdOlsly1Afa8Xn6Xzw9N96geTAXJShazMMi3I4WOsmejtlIMowbws4jRmbOOA2tV1dkGFoGbMMu9O0q24VZzpSSziCDKfttV8iSGOSv9wODRKjVkGGrs7Z/G0b1w/XdDy6Cz/b8rBIQYal3U7sj6j70WhoR+12AEt02CVKMdTpWVNk0TeZ4as5SgM0R8NTIYZDnTMYL7bjjpOO8uJCDFVeCKebX1Kt7tEcQ4xhXgjH/dPJgw96DCmGuyz3MdQ1pc4nj632QRRi+HXWNNJNghvz4cPwO0Uhht9nTeMfhqp+PGCf0BBimBnC8a8/fRzNdpFKhmFuCDOoZcYwa9aUyXZFXIThrTfO0qbHeN1QL+/exKbHeN1QZc6a8tnMMV431GHWdPM9s3W07/Z1Q+XKgxXfS8RZqfcN84bcP4LW6zfvG2YOuX9EGwavk9HrhvqBEEYbNt82/LTWdIFVVuptwweuwp6l23/bUD/zHJfVbsa3Df3nmcJpltP0bcPwziNR9GJaGqUbU91LG1g9BeN9w2v3GiSR0x8+9AAQSWOap4Hhzfx6Q1eNzxdiKU1F6yFshn0ILdPjcPoUCU2GLGVOeVG2p4u5aZWK68Lw/Vkavswdt/jmFDiN7A9WNB5hSf3WhoPpFKXrd9tmCi63irA8sI3mb+f2F58xvDF/n6VIwytXCFW/2Y7zyZ6TJVv3pPpnxPGzW655Ere9a+tpqLAVp2D/BNOa1TG54+1JfMXW4JDhDeCM9r5kwL+k92d4/vNFBAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Y/wDpoY2HBKwqLIAAAAASUVORK5CYII=" style="width: 100%; height: 175px;">
+																						<span class="font-weight500" alt="">
+																					</div>
+																					<p class="pr-2 pl-3 pt-4" style="color: #0066c0;">
+																						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+																					</p>
+																				</div>
+																				<div class="flex-column-2 d-flex">
+																					<div class="pic p1"></div>
+																					<div class="information  flex-column pl-3 pt-2">
+																						
+																						<p class="text-gray"> <b>$300</b> </p>
+																						<button type="button" name="button" class="add_card">
+																							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+																							Add to Cart
+																						</button>
+																					</div>
+																				</div>
+																				<span></span>
+																			<!-- </a> -->
+																		</div>
+																		<div class="col-lg-4 col-sm-12 col-12 d-flex flex-column ">
+																				<!-- <a href="#" class="introduce pb-3"> -->
+																				<div class="flex-column-1 ">
+																					<div class="">
+																						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEXt7e3V1dXW1tbm5ubs7Ozg4ODc3NzS0tLw8PDo6OjZ2dnj4+Pe3t5T9WAhAAAEmklEQVR4nO2ciXKsIBBFsQUB9f+/9+EuKjPEpe2X3FOVSTJlAmdaWRpUKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8Pbnh9mr4Uza+nnSpbChTTy0M/hNfKeNeXyIshW/BReaVZ4+h8zSY3lESG008rz+a30LIqFpbYDa1huxC1qovQDHAbUuG5DF3Tl8cmORdTs/Ua9VxuzUHXaA+WnsnQD90EUa1ZPlRtChoMuRobs5w0PLiGphJ5YlgNxVnGHrgeTlOuIkdD4imtx/B+qKNhzThOLF8xJE5D+4ohT2k9MLwZGD4ADG8Ghg8Aw5uB4QPINRxqdH14J9awmyG7summ5tfqJthQO1NY21wtUrKh7zJW9mqWTLLhcPDV9INYQ6XHqhXGXaqcXEM1L2/4S2k5qYbaNfP61LXEnFRDpWhJize/MIbrEAau1E6qoV75FfZKwlqmoVYmWiWmUp1ex5VpqKIQdhdkOG9/l2EcwuDYnu4UZRrq7frihSVOgYahKm2xUzw9eBNoqJy3O8Pi9CRDoqGqhv0+UQzpbKco0bAs9iEMVOeKlGeoVWpH0bnBmzxD5VMbbuhUJQUapkJI9tR5Ks+w+bBnqnRxXqr7razMx30d8gzTu4nI1nE1O8HWfkl0SDN0TXq7lKUwyYgqqrvDw9uftq1JM9RftoP57eF09PYaYYbOpNRG6vUIXLtqrH6bPk+FGX4LYdcpLripVSJbupSjMMNvISyiwZsu5sFdOlsly1Afa8Xn6Xzw9N96geTAXJShazMMi3I4WOsmejtlIMowbws4jRmbOOA2tV1dkGFoGbMMu9O0q24VZzpSSziCDKfttV8iSGOSv9wODRKjVkGGrs7Z/G0b1w/XdDy6Cz/b8rBIQYal3U7sj6j70WhoR+12AEt02CVKMdTpWVNk0TeZ4as5SgM0R8NTIYZDnTMYL7bjjpOO8uJCDFVeCKebX1Kt7tEcQ4xhXgjH/dPJgw96DCmGuyz3MdQ1pc4nj632QRRi+HXWNNJNghvz4cPwO0Uhht9nTeMfhqp+PGCf0BBimBnC8a8/fRzNdpFKhmFuCDOoZcYwa9aUyXZFXIThrTfO0qbHeN1QL+/exKbHeN1QZc6a8tnMMV431GHWdPM9s3W07/Z1Q+XKgxXfS8RZqfcN84bcP4LW6zfvG2YOuX9EGwavk9HrhvqBEEYbNt82/LTWdIFVVuptwweuwp6l23/bUD/zHJfVbsa3Df3nmcJpltP0bcPwziNR9GJaGqUbU91LG1g9BeN9w2v3GiSR0x8+9AAQSWOap4Hhzfx6Q1eNzxdiKU1F6yFshn0ILdPjcPoUCU2GLGVOeVG2p4u5aZWK68Lw/Vkavswdt/jmFDiN7A9WNB5hSf3WhoPpFKXrd9tmCi63irA8sI3mb+f2F58xvDF/n6VIwytXCFW/2Y7zyZ6TJVv3pPpnxPGzW655Ere9a+tpqLAVp2D/BNOa1TG54+1JfMXW4JDhDeCM9r5kwL+k92d4/vNFBAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Y/wDpoY2HBKwqLIAAAAASUVORK5CYII=" style="width: 100%; height: 175px;">
+																						<span class="font-weight500" alt="">
+																					</div>
+																					<p class="pr-2 pl-3 pt-4" style="color: #0066c0;">
+																						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+																					</p>
+																				</div>
+																				<div class="flex-column-2 d-flex">
+																					<div class="pic p1"></div>
+																					<div class="information  flex-column pl-3 pt-2">
+																						
+																						<p class="text-gray"> <b>$300</b> </p>
+																						<button type="button" name="button" class="add_card">
+																							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+																							Add to Cart
+																						</button>
+																					</div>
+																				</div>
+																				<span></span>
+																			<!-- </a> -->
+																		</div>
+																	</div>
+
+																</div>
+																<div class="carousel-item ">
+																		<div class="d-flex">
+																			<div class="col-lg-4 col-sm-12 col-12 d-flex flex-column ">
+																					<!-- <a href="#" class="introduce pb-3"> -->
+																					<div class="flex-column-1 ">
+																						<div class="">
+																							<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEXt7e3V1dXW1tbm5ubs7Ozg4ODc3NzS0tLw8PDo6OjZ2dnj4+Pe3t5T9WAhAAAEmklEQVR4nO2ciXKsIBBFsQUB9f+/9+EuKjPEpe2X3FOVSTJlAmdaWRpUKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8Pbnh9mr4Uza+nnSpbChTTy0M/hNfKeNeXyIshW/BReaVZ4+h8zSY3lESG008rz+a30LIqFpbYDa1huxC1qovQDHAbUuG5DF3Tl8cmORdTs/Ua9VxuzUHXaA+WnsnQD90EUa1ZPlRtChoMuRobs5w0PLiGphJ5YlgNxVnGHrgeTlOuIkdD4imtx/B+qKNhzThOLF8xJE5D+4ohT2k9MLwZGD4ADG8Ghg8Aw5uB4QPINRxqdH14J9awmyG7summ5tfqJthQO1NY21wtUrKh7zJW9mqWTLLhcPDV9INYQ6XHqhXGXaqcXEM1L2/4S2k5qYbaNfP61LXEnFRDpWhJize/MIbrEAau1E6qoV75FfZKwlqmoVYmWiWmUp1ex5VpqKIQdhdkOG9/l2EcwuDYnu4UZRrq7frihSVOgYahKm2xUzw9eBNoqJy3O8Pi9CRDoqGqhv0+UQzpbKco0bAs9iEMVOeKlGeoVWpH0bnBmzxD5VMbbuhUJQUapkJI9tR5Ks+w+bBnqnRxXqr7razMx30d8gzTu4nI1nE1O8HWfkl0SDN0TXq7lKUwyYgqqrvDw9uftq1JM9RftoP57eF09PYaYYbOpNRG6vUIXLtqrH6bPk+FGX4LYdcpLripVSJbupSjMMNvISyiwZsu5sFdOlsly1Afa8Xn6Xzw9N96geTAXJShazMMi3I4WOsmejtlIMowbws4jRmbOOA2tV1dkGFoGbMMu9O0q24VZzpSSziCDKfttV8iSGOSv9wODRKjVkGGrs7Z/G0b1w/XdDy6Cz/b8rBIQYal3U7sj6j70WhoR+12AEt02CVKMdTpWVNk0TeZ4as5SgM0R8NTIYZDnTMYL7bjjpOO8uJCDFVeCKebX1Kt7tEcQ4xhXgjH/dPJgw96DCmGuyz3MdQ1pc4nj632QRRi+HXWNNJNghvz4cPwO0Uhht9nTeMfhqp+PGCf0BBimBnC8a8/fRzNdpFKhmFuCDOoZcYwa9aUyXZFXIThrTfO0qbHeN1QL+/exKbHeN1QZc6a8tnMMV431GHWdPM9s3W07/Z1Q+XKgxXfS8RZqfcN84bcP4LW6zfvG2YOuX9EGwavk9HrhvqBEEYbNt82/LTWdIFVVuptwweuwp6l23/bUD/zHJfVbsa3Df3nmcJpltP0bcPwziNR9GJaGqUbU91LG1g9BeN9w2v3GiSR0x8+9AAQSWOap4Hhzfx6Q1eNzxdiKU1F6yFshn0ILdPjcPoUCU2GLGVOeVG2p4u5aZWK68Lw/Vkavswdt/jmFDiN7A9WNB5hSf3WhoPpFKXrd9tmCi63irA8sI3mb+f2F58xvDF/n6VIwytXCFW/2Y7zyZ6TJVv3pPpnxPGzW655Ere9a+tpqLAVp2D/BNOa1TG54+1JfMXW4JDhDeCM9r5kwL+k92d4/vNFBAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Y/wDpoY2HBKwqLIAAAAASUVORK5CYII=" style="width: 100%; height: 175px;">
+																							<span class="font-weight500" alt="">
+																						</div>
+																						<p class="pr-2 pl-3 pt-4" style="color: #0066c0;">
+																							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+																						</p>
+																					</div>
+																					<div class="flex-column-2 d-flex">
+																						<div class="pic p1"></div>
+																						<div class="information  flex-column pl-3 pt-2">
+																							
+																							<p class="text-gray"> <b>$300</b> </p>
+																							<button type="button" name="button" class="add_card">
+																								<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+																								Add to Cart
+																							</button>
+																						</div>
+																					</div>
+																					<span></span>
+																				<!-- </a> -->
+																			</div>
+																			<div class="col-lg-4 col-sm-12 col-12 d-flex flex-column ">
+																					<!-- <a href="#" class="introduce pb-3"> -->
+																					<div class="flex-column-1 ">
+																						<div class="">
+																							<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEXt7e3V1dXW1tbm5ubs7Ozg4ODc3NzS0tLw8PDo6OjZ2dnj4+Pe3t5T9WAhAAAEmklEQVR4nO2ciXKsIBBFsQUB9f+/9+EuKjPEpe2X3FOVSTJlAmdaWRpUKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8Pbnh9mr4Uza+nnSpbChTTy0M/hNfKeNeXyIshW/BReaVZ4+h8zSY3lESG008rz+a30LIqFpbYDa1huxC1qovQDHAbUuG5DF3Tl8cmORdTs/Ua9VxuzUHXaA+WnsnQD90EUa1ZPlRtChoMuRobs5w0PLiGphJ5YlgNxVnGHrgeTlOuIkdD4imtx/B+qKNhzThOLF8xJE5D+4ohT2k9MLwZGD4ADG8Ghg8Aw5uB4QPINRxqdH14J9awmyG7summ5tfqJthQO1NY21wtUrKh7zJW9mqWTLLhcPDV9INYQ6XHqhXGXaqcXEM1L2/4S2k5qYbaNfP61LXEnFRDpWhJize/MIbrEAau1E6qoV75FfZKwlqmoVYmWiWmUp1ex5VpqKIQdhdkOG9/l2EcwuDYnu4UZRrq7frihSVOgYahKm2xUzw9eBNoqJy3O8Pi9CRDoqGqhv0+UQzpbKco0bAs9iEMVOeKlGeoVWpH0bnBmzxD5VMbbuhUJQUapkJI9tR5Ks+w+bBnqnRxXqr7razMx30d8gzTu4nI1nE1O8HWfkl0SDN0TXq7lKUwyYgqqrvDw9uftq1JM9RftoP57eF09PYaYYbOpNRG6vUIXLtqrH6bPk+FGX4LYdcpLripVSJbupSjMMNvISyiwZsu5sFdOlsly1Afa8Xn6Xzw9N96geTAXJShazMMi3I4WOsmejtlIMowbws4jRmbOOA2tV1dkGFoGbMMu9O0q24VZzpSSziCDKfttV8iSGOSv9wODRKjVkGGrs7Z/G0b1w/XdDy6Cz/b8rBIQYal3U7sj6j70WhoR+12AEt02CVKMdTpWVNk0TeZ4as5SgM0R8NTIYZDnTMYL7bjjpOO8uJCDFVeCKebX1Kt7tEcQ4xhXgjH/dPJgw96DCmGuyz3MdQ1pc4nj632QRRi+HXWNNJNghvz4cPwO0Uhht9nTeMfhqp+PGCf0BBimBnC8a8/fRzNdpFKhmFuCDOoZcYwa9aUyXZFXIThrTfO0qbHeN1QL+/exKbHeN1QZc6a8tnMMV431GHWdPM9s3W07/Z1Q+XKgxXfS8RZqfcN84bcP4LW6zfvG2YOuX9EGwavk9HrhvqBEEYbNt82/LTWdIFVVuptwweuwp6l23/bUD/zHJfVbsa3Df3nmcJpltP0bcPwziNR9GJaGqUbU91LG1g9BeN9w2v3GiSR0x8+9AAQSWOap4Hhzfx6Q1eNzxdiKU1F6yFshn0ILdPjcPoUCU2GLGVOeVG2p4u5aZWK68Lw/Vkavswdt/jmFDiN7A9WNB5hSf3WhoPpFKXrd9tmCi63irA8sI3mb+f2F58xvDF/n6VIwytXCFW/2Y7zyZ6TJVv3pPpnxPGzW655Ere9a+tpqLAVp2D/BNOa1TG54+1JfMXW4JDhDeCM9r5kwL+k92d4/vNFBAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Y/wDpoY2HBKwqLIAAAAASUVORK5CYII=" style="width: 100%; height: 175px;">
+																							<span class="font-weight500" alt="">
+																						</div>
+																						<p class="pr-2 pl-3 pt-4" style="color: #0066c0;">
+																							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+																						</p>
+																					</div>
+																					<div class="flex-column-2 d-flex">
+																						<div class="pic p1"></div>
+																						<div class="information  flex-column pl-3 pt-2">
+																							
+																							<p class="text-gray"> <b>$300</b> </p>
+																							<button type="button" name="button" class="add_card">
+																								<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+																								Add to Cart
+																							</button>
+																						</div>
+																					</div>
+																					<span></span>
+																				<!-- </a> -->
+																			</div>
+																			<div class="col-lg-4 col-sm-12 col-12 d-flex flex-column ">
+																					<!-- <a href="#" class="introduce pb-3"> -->
+																					<div class="flex-column-1 ">
+																						<div class="">
+																							<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEXt7e3V1dXW1tbm5ubs7Ozg4ODc3NzS0tLw8PDo6OjZ2dnj4+Pe3t5T9WAhAAAEmklEQVR4nO2ciXKsIBBFsQUB9f+/9+EuKjPEpe2X3FOVSTJlAmdaWRpUKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8Pbnh9mr4Uza+nnSpbChTTy0M/hNfKeNeXyIshW/BReaVZ4+h8zSY3lESG008rz+a30LIqFpbYDa1huxC1qovQDHAbUuG5DF3Tl8cmORdTs/Ua9VxuzUHXaA+WnsnQD90EUa1ZPlRtChoMuRobs5w0PLiGphJ5YlgNxVnGHrgeTlOuIkdD4imtx/B+qKNhzThOLF8xJE5D+4ohT2k9MLwZGD4ADG8Ghg8Aw5uB4QPINRxqdH14J9awmyG7summ5tfqJthQO1NY21wtUrKh7zJW9mqWTLLhcPDV9INYQ6XHqhXGXaqcXEM1L2/4S2k5qYbaNfP61LXEnFRDpWhJize/MIbrEAau1E6qoV75FfZKwlqmoVYmWiWmUp1ex5VpqKIQdhdkOG9/l2EcwuDYnu4UZRrq7frihSVOgYahKm2xUzw9eBNoqJy3O8Pi9CRDoqGqhv0+UQzpbKco0bAs9iEMVOeKlGeoVWpH0bnBmzxD5VMbbuhUJQUapkJI9tR5Ks+w+bBnqnRxXqr7razMx30d8gzTu4nI1nE1O8HWfkl0SDN0TXq7lKUwyYgqqrvDw9uftq1JM9RftoP57eF09PYaYYbOpNRG6vUIXLtqrH6bPk+FGX4LYdcpLripVSJbupSjMMNvISyiwZsu5sFdOlsly1Afa8Xn6Xzw9N96geTAXJShazMMi3I4WOsmejtlIMowbws4jRmbOOA2tV1dkGFoGbMMu9O0q24VZzpSSziCDKfttV8iSGOSv9wODRKjVkGGrs7Z/G0b1w/XdDy6Cz/b8rBIQYal3U7sj6j70WhoR+12AEt02CVKMdTpWVNk0TeZ4as5SgM0R8NTIYZDnTMYL7bjjpOO8uJCDFVeCKebX1Kt7tEcQ4xhXgjH/dPJgw96DCmGuyz3MdQ1pc4nj632QRRi+HXWNNJNghvz4cPwO0Uhht9nTeMfhqp+PGCf0BBimBnC8a8/fRzNdpFKhmFuCDOoZcYwa9aUyXZFXIThrTfO0qbHeN1QL+/exKbHeN1QZc6a8tnMMV431GHWdPM9s3W07/Z1Q+XKgxXfS8RZqfcN84bcP4LW6zfvG2YOuX9EGwavk9HrhvqBEEYbNt82/LTWdIFVVuptwweuwp6l23/bUD/zHJfVbsa3Df3nmcJpltP0bcPwziNR9GJaGqUbU91LG1g9BeN9w2v3GiSR0x8+9AAQSWOap4Hhzfx6Q1eNzxdiKU1F6yFshn0ILdPjcPoUCU2GLGVOeVG2p4u5aZWK68Lw/Vkavswdt/jmFDiN7A9WNB5hSf3WhoPpFKXrd9tmCi63irA8sI3mb+f2F58xvDF/n6VIwytXCFW/2Y7zyZ6TJVv3pPpnxPGzW655Ere9a+tpqLAVp2D/BNOa1TG54+1JfMXW4JDhDeCM9r5kwL+k92d4/vNFBAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Y/wDpoY2HBKwqLIAAAAASUVORK5CYII=" style="width: 100%; height: 175px;">
+																							<span class="font-weight500" alt="">
+																						</div>
+																						<p class="pr-2 pl-3 pt-4" style="color: #0066c0;">
+																							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+																						</p>
+																					</div>
+																					<div class="flex-column-2 d-flex">
+																						<div class="pic p1"></div>
+																						<div class="information  flex-column pl-3 pt-2">
+																						
+																							<p class="text-gray"> <b>$300</b> </p>
+																							<button type="button" name="button" class="add_card">
+																								<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+																								Add to Cart
+																							</button>
+																						</div>
+																					</div>
+																					<span></span>
+																				<!-- </a> -->
+																			</div>
+																		</div>
+
+																	</div>
+														</div>
+
+														<!-- Left and right controls -->
+
+																<a class="carousel-control-prev" href="#demo" data-slide="prev" style="opacity: 1; left: -10%;">
+																	<i class="fas fa-chevron-left" style="color:#333; font-size:30px;"></i>
+																</a>
+																<a class="carousel-control-next" href="#demo" data-slide="next" style="opacity: 1; transform: rotate(-180deg); right: -10%;">
+																	<i class="fas fa-chevron-left" style="color:#333; font-size:30px;"></i>
+																</a>
+
+
+													  </div>
+
+
+
+										</div>
+
+
+							</section>
+
+						</div>
+
+						<div class="bg-white p-6">
+								<div class="d-flex" style="justify-content: space-between;">
+									<div>
+										Your Saved items
+									</div>
+									<div>
+										
+									</div>
+								</div>
+							</div>
+						
+				</div>
+			
+			
+			</div>
+			 <div class="col-sm-4 col-lg-4 col-md-4">
+			<div class="bg-white" style="height: 100%;">
+			 		<div class="">
+					<h3 class="text-center">Order Summary</h3>
+					<hr>
+					<div class="d-flex" style="justify-content: space-between;">
+						<div>
+							Item Total
+						</div>
+						<div>
+							$300.00
+						</div>
+					</div>
+					<div class="d-flex" style="justify-content: space-between;">
+						<div>
+							Sale Tax
+						</div>
+						<div>
+							Calculated in checkout
+						</div>
+					</div>
+					<hr>
+					<div class="d-flex" style="justify-content: space-between;">
+						<div>
+							Total
+						</div>
+						<div>
+							<b>$300.00</b>
+						</div>
+					</div>
+					<div>
+						<button class="check_out">Checkout</button>
+						<button class="paypal_chck"> <img src="https://cdn.iconscout.com/icon/free/png-512/paypal-5-226456.png" width="50px">  Checkout</button>
+					</div>
+					<div>
+						<a href="">Sign in </a> to get My Best Buy Points
+					</div>
+					<hr>
+					<div>
+						<h6>Apply today, shop today</h6>
+						<div class="d-flex">
+							<div style="width: 50%; text-align: center;">
+								<img width="60px" src="https://cdn4.iconfinder.com/data/icons/banking-and-finance-vol-1/1000/24-512.png">
+								<br>
+								<a href="" style="    font-size: 12px;">Show me now ></a>
+							</div>
+							<div>
+								<p> <b>10% back in rewards</b> on first day of purchases for new 
+									My Best Buy <span>*</span> Credit Card members
+								  </p>
+								  <p> <b>10% back in rewards</b> on first day of purchases for new 
+									My Best Buy <span>*</span> Credit Card members
+								  </p>
+							</div>
+						</div>
+						<div>
+							<b>Looking for a lease to own option?</b>
+							<br>
+							<a href="">Learn more</a>
+						</div>
+						<hr>
+						<div>
+							<div class="d-flex">
+								<div>
+									
+								</div>
+								<div>
+									<span> <b>Buying a gift for someone special</b> </span> <br>
+									<span> <a href="">Gift option</a> can be added in checkout </span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+<!-- -->
+ 	<div class="footer">
+ 		<div class="row" style="    margin-left: -2px;">
+ 			<div class="col-lg-3 ">
+ 				<div>
+ 					<h6>Get to Know Us</h6>
+ 					<ul>
+ 						<li>
+ 							<a href="">Our Company</a>
+ 						</li>
+ 						<li>
+ 							<a href="">Career</a>
+ 						</li>
+ 						<li>
+ 							<a href="">Blog</a>
+ 						</li>
+ 					</ul>
+ 				</div>
+ 			</div>
+ 			<div class="col-lg-3 ">
+ 				<div>
+ 					<h6>Spree Business</h6>
+ 					<ul>
+ 						<li>
+ 							<a href="">Sell on Spree</a>
+ 						</li>
+ 						<li>
+ 							<a href="">Advertise With Us</a>
+ 						</li>
+ 					</ul>
+ 				</div>
+ 			</div>
+ 			<div class="col-lg-3 ">
+ 				<div>
+ 					<h6>Customer Service</h6>
+ 					<ul>
+ 						<li>
+ 							<a href="">Contact Us </a>
+ 						</li>
+ 						<li>
+ 							<a href="">FAQ</a>
+ 						</li>
+ 					</ul>
+ 				</div>
+ 			</div>
+ 			<div class="col-lg-3  ">
+<h6>Social</h6>
+				<div class="d-flex">
+					<div style="width: 24px;">
+<i class="fa fa-instagram" aria-hidden="true"></i>
+
+					</div>
+					<div style="width: 24px;">
+<i class="fa fa-twitter" aria-hidden="true"></i>
+					</div>
+
+				</div>
+ 			</div>
+
+ 		</div>
+ 	</div>
+</article>
+<!-- /.navbar -->
+</body>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/popper.min"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"> -->
+
+	</script>
+	<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"> -->
+
+	</script>
+	<script type="text/javascript">
+
+
+		(function($) { // Begin jQuery
+  $(function() { // DOM ready
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      // Close one dropdown when selecting another
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    // Clicking away from dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    // Toggle open and close nav styles on click
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    // Hamburger to X toggle
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); // end DOM ready
+})(jQuery); // end jQuery
+	</script>
+</html>
